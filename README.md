@@ -44,7 +44,7 @@ Fisher's Iris Data set is to be researched, and documentation (my opinions) and 
 ## Getting Started
 
 I started by creating the Github repository 'pands-project' and added the data set to it converted from a data file.
-The script for conversion is included
+The script for conversion is included. As I've delved deeper into the project, the repository has increased in size.
 
 ## Why
 
