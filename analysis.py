@@ -4,7 +4,13 @@
 # Fabio Fabrizi
 
 
-# import EDA.py
+# import from the other files
 from converter2 import *
+from EDA import *
 
+
+# Convert the data first
 convert_data()
+
+# Exploratory Data Analysis next
+exploratory()
