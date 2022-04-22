@@ -25,7 +25,7 @@
         <li><a href="#installation">Research</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#Preliminary Findings">Preliminary Findings</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -73,3 +73,14 @@ However, my mother is a keen gardener, she told me about a scenario that occurs 
 4) Within a few days, someone has responded with the answer. 
 
 So there's a concrete example of a data set point being checked against the data set (or many) in order to produce an answer.
+
+## Preliminary Findings
+
+From all the various articles (aimed at beginners in this field) that I've come across on this topic, there seems to be a common pattern.
+i) Get the dataset
+ii) Check the dataset for null values and remove them
+iii) Get a 'feeling' for the dataset and associated data - ie How many rows/columns, mean/max/min values etc
+iv) Apply some statistical analysis to get a visual representation of the data
+v) Examine the visual representation - Does it show a pattern or something unique that we can use to understand the data set.
+
+From the process above, one can take a data set in csv format and apply the above steps to look for any unique patterns in the data.
