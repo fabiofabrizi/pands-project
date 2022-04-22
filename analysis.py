@@ -14,3 +14,6 @@ convert_data()
 
 # Exploratory Data Analysis next
 exploratory()
+
+# Print Preliminary results to text file
+eda_to_text()

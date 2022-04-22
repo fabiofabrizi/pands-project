@@ -5,6 +5,8 @@
 
 # Import pandas
 import pandas as pd
+import sys
+import contextlib
 
 def exploratory():
     # Read the csv file - note that in this project it's in the same folder
@@ -55,8 +57,16 @@ def exploratory():
     print(df.describe())
     return
 
+# Print to analysis.txt
+def eda_to_text():
+    with open('analysis.txt', 'w') as f:
+        with contextlib.redirect_stdout(f):
+            print(exploratory(), file=f)
+    return
 
-    
+#eda_to_text()
+
+
 # NB:
 # df.head() might not be necessary, but it's just a 
 # quick way of seeing the columns/rows of the dataset
