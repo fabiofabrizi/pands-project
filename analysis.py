@@ -5,6 +5,6 @@
 
 
 # import EDA.py
-import EDA
+from converter2 import *
 
-p=EDA.run('EDA.py', shell=True)
+convert_data()
