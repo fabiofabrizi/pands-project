@@ -14,8 +14,10 @@ import scipy as sp
 # Lets see it visually, counting the number of each
 df = pd.read_csv("iris2.csv")
 
-sns.countplot(x='species', data=df, )
-plt.title("Iris Species")
-plt.xlabel("Species")
-plt.ylabel("Count")
-plt.savefig('Data Visualisation/species-plot.png')
+def species():
+    sns.countplot(x='species', data=df, )
+    plt.title("Iris Species")
+    plt.xlabel("Species")
+    plt.ylabel("Count")
+    plt.savefig('Data Visualisation/species-plot.png')
+    return
