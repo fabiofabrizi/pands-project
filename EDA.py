@@ -10,6 +10,7 @@ import pandas as pd
 df = pd.read_csv("iris2.csv")
 
 # Print the top 5 rows
+# NB below can be changed to df.head(10) to get the first 10 rows.
 print("\nBelow are the top 5 rows of the dataset.\nYou can also see the column headers\n")
 print(df.head())
 

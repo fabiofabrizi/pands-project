@@ -7,3 +7,4 @@
 # import EDA.py
 import EDA
 
+p=EDA.run('EDA.py', shell=True)
