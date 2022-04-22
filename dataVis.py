@@ -31,18 +31,36 @@ def species():
 def sepal_relation():
     sns.scatterplot(x='sepal_length', y='sepal_width',
                 hue='species', data=df, )
+    # Labels for title, x and y axis
     plt.title("Sepal width & length characteristics of each species")
-    #plt.xlabel("Sepal Length")
-    #plt.ylabel("Sepal Width")
-    # Placing Legend outside the Figure
+    plt.xlabel("Sepal Length cm")
+    plt.ylabel("Sepal Width cm")
     plt.legend(bbox_to_anchor=(1, 1), loc="best")
     #plt.show()
     plt.savefig('Data Visualisation/sepal_length_width.png')
     return
 
+
+def petal_relation():
+    sns.scatterplot(x='petal_length', y='petal_width',
+                hue='species', data=df, )
+    # Labels for title, x and y axis
+    plt.title("Petal width & length characteristics of each species")
+    plt.xlabel("Petal Length cm")
+    plt.ylabel("Petal Width cm")
+    # Place legend in best spot
+    plt.legend(bbox_to_anchor=(1, 1), loc="best")
+    #plt.show()
+    plt.savefig('Data Visualisation/petal_length_width.png')
+    return
+
+
+
 # Function calls for testing
 # Commented out because analysis.py is 
 # doing the calling
+petal_relation() 
 sepal_relation()
-species() 
+species()
+
 
