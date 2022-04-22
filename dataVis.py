@@ -59,8 +59,8 @@ def petal_relation():
 # Function calls for testing
 # Commented out because analysis.py is 
 # doing the calling
-petal_relation() 
-sepal_relation()
-species()
+#petal_relation() 
+#sepal_relation()
+#species()
 
 
