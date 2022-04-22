@@ -15,4 +15,7 @@ import scipy as sp
 df = pd.read_csv("iris2.csv")
 
 sns.countplot(x='species', data=df, )
-plt.show()
+plt.title("Iris Species")
+plt.xlabel("Species")
+plt.ylabel("Count")
+plt.savefig('Data Visualisation/species-plot.png')
