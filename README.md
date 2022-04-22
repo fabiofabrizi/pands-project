@@ -84,3 +84,20 @@ iv) Apply some statistical analysis to get a visual representation of the data
 v) Examine the visual representation - Does it show a pattern or something unique that we can use to understand the data set.
 
 From the process above, one can take a data set in csv format and apply the above steps to look for any unique patterns in the data.
+
+## Files
+
+There's lots of files - here's an explanation of them
+converter2.py
+This pulls directly from the main archive at UCI and converts it to a CSV format with headers
+The call to the function is commented out because analysis.py calls it.
+The file does the task of i) from Preliminary Findings
+
+EDA.py
+This is the Exploratory Data Analysis of the Iris Data set. We check for missing values, duplicates, etc
+The function is called from analysis.py
+This file does the task of ii) and iii) from Preliminary Findings.
+
+analysis.py
+This calls the functions from the other files so that only one file needs to be run. I've done it in this way
+because I tried to split it up into parts and thought if the project scope changed it would be better for maintenance
