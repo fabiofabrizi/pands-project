@@ -26,8 +26,8 @@
       </ul>
     </li>
     <li><a href="#Preliminary Findings">Preliminary Findings</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#Files">Files</a></li>
+    <li><a href="#Conclusions">Conclusions</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -101,3 +101,16 @@ This file does the task of ii) and iii) from Preliminary Findings.
 analysis.py
 This calls the functions from the other files so that only one file needs to be run. I've done it in this way
 because I tried to split it up into parts and thought if the project scope changed it would be better for maintenance
+
+
+dataVis.py
+This file performs iv) and v) from Preliminary Findings
+We're examining: 
+- Sepal length and width of the species and looking for patterns,
+- Petal lengtha and width and looking for patterns,
+
+
+## Conclusions
+
+dataVis.py generates all the visualisations and saves them.
+<b>Sepal Relation</b>

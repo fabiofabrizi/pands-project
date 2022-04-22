@@ -32,11 +32,17 @@ def sepal_relation():
     sns.scatterplot(x='sepal_length', y='sepal_width',
                 hue='species', data=df, )
     plt.title("Sepal width & length characteristics of each species")
-    plt.xlabel("Sepal Length")
-    plt.ylabel("Sepal Width")
+    #plt.xlabel("Sepal Length")
+    #plt.ylabel("Sepal Width")
     # Placing Legend outside the Figure
-    plt.legend(bbox_to_anchor=(1, 1), loc=1)
+    plt.legend(bbox_to_anchor=(1, 1), loc="best")
     #plt.show()
     plt.savefig('Data Visualisation/sepal_length_width.png')
     return
-#sepal_relation()
+
+# Function calls for testing
+# Commented out because analysis.py is 
+# doing the calling
+sepal_relation()
+species() 
+
