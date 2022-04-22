@@ -113,4 +113,17 @@ We're examining:
 ## Conclusions
 
 dataVis.py generates all the visualisations and saves them.
-<b>Sepal Relation</b>
+<b>Sepal Relationship</b>
+From looking at the scatterplot in the 'Data Visualisation' folder (sepal_length_width.png) we can determine
+the following:
+'Iris Setosa' has larger sepal widths but smaller sepal lengths
+'Iris Virginica' has larger sepal lengths but smaller sepal widths
+'Iris Versicolor' is somewhere inbetween the two species in terms of sepal length and width.
+
+<b>Petal Relationship</b>
+From looking at the scatterplot in the 'Data Visualisation' folder (petal_length_width.png) we can determine
+the following: 
+'Iris Setosa' has smaller petal lengths and widths than the other two species
+'Iris Virginica' has the largest petal lengths and widths of all three species
+'Iris Versicolor' is once again inbetween the two species in terms of petal lengths and widths
+
