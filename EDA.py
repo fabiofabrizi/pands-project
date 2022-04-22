@@ -56,3 +56,7 @@ print(df.describe())
 # NB:
 # df.head() might not be necessary, but it's just a 
 # quick way of seeing the columns/rows of the dataset
+#
+# Could also have used data.columns to get info about the columns only
+#
+# For more complex tasks we could slice the rows to work on a particular task
