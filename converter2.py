@@ -12,9 +12,11 @@ import pandas as pd
 # NB The headers (attributes) are specified on the web page itself
 # https://archive.ics.uci.edu/ml/datasets/Iris
 
-iris = pd.read_csv('https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data', header=None,names = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class'])
+url = "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
+iris=pd.read_csv(url, header=None,names = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species'])
+#iris = pd.read_csv('https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data', header=None,names = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species'])
 # This is where the conversion happens
 #iris.to_csv('iris2.csv', index = None)
-
-iris.to_csv('pands-project/iris2.csv', index = None)
+iris.to_csv('iris2.csv', index=None)
+#iris.to_csv('pands-project/iris2.csv', index = None)
 #type(iris)
