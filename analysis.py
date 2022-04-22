@@ -15,5 +15,5 @@ convert_data()
 # Exploratory Data Analysis next
 exploratory()
 
-# Print Preliminary results to text file
+# Print Preliminary results to text file - see analysis.txt in folder
 eda_to_text()
