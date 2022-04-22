@@ -7,7 +7,7 @@
 # import from the other files
 from converter2 import *
 from EDA import *
-
+from dataVis import *
 
 # Convert the data first
 convert_data()
@@ -17,3 +17,7 @@ exploratory()
 
 # Print Preliminary results to text file - see analysis.txt in folder
 eda_to_text()
+
+# Plot of species count - This is just a visual representation of 
+# df.value_counts("species")
+species()
