@@ -52,6 +52,9 @@ def petal_relation():
     plt.savefig('Data Visualisation/petal_length_width.png')
     return
 
+# Now we can dig deeper using multivariate analysis
+# https://www.mygreatlearning.com/blog/introduction-to-multivariate-analysis/
+# Why? Because the data set is multivariate
 
 
 # Function calls for testing
