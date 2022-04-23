@@ -102,10 +102,10 @@ def pair_plots():
 # Function calls for testing
 # Commented out because analysis.py is 
 # doing the calling
-petal_relation() 
-sepal_relation()
-species()
-petal_sepal_length_relation()
-petal_sepal_width_relation()
-pair_plots()
+#petal_relation() 
+#sepal_relation()
+#species()
+#petal_sepal_length_relation()
+#petal_sepal_width_relation()
+#pair_plots()
 
