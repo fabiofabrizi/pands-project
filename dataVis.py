@@ -85,6 +85,15 @@ def petal_sepal_width_relation():
     plt.savefig('Data Visualisation/petal_sepal_width.png')
     return
 
+# Now Let's look at the attributes using a scatterplot within seaborn
+def pair_plots():
+    cn = ['setosa', 'versicolor', 'virginica']
+    sns.pairplot(df, hue="species", height = 2, palette = 'colorblind')
+    #plt.show()
+    plt.savefig('Data Visualisation/pair_plots.png')
+    return
+
+
 # Now we can dig deeper using multivariate analysis
 # https://www.mygreatlearning.com/blog/introduction-to-multivariate-analysis/
 # Why? Because the data set is multivariate
@@ -98,4 +107,5 @@ sepal_relation()
 species()
 petal_sepal_length_relation()
 petal_sepal_width_relation()
+pair_plots()
 
