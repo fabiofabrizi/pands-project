@@ -15,11 +15,15 @@ import pandas as pd
 # as it defines the dataframe that's being examined.
 df = pd.read_csv("iris2.csv")
 
+
+# plt.show() is commented out as it was just for testing
 def species():
     sns.countplot(x='species', data=df, )
+    # Setting title and labels for x and y axes
     plt.title("Iris Species")
     plt.xlabel("Species")
     plt.ylabel("Count")
+    #plt.show()
     plt.savefig('Data Visualisation/species-plot.png')
     return
 
@@ -27,13 +31,15 @@ def species():
 # to see if any patterns are emerging
 
 def sepal_relation():
-    sns.scatterplot(x='sepal_length', y='sepal_width',
-                hue='species', data=df, )
-    # Labels for title, x and y axis
-    plt.title("Sepal width & length characteristics of each species")
-    plt.xlabel("Sepal Length cm")
-    plt.ylabel("Sepal Width cm")
-    plt.legend(bbox_to_anchor=(1, 1), loc="best")
+    
+    sns.FacetGrid(df, hue="species",
+                height = 8).map(plt.scatter,
+                                'sepal_width',
+                                'sepal_length').add_legend()
+    # Setting title and labels for x and y axes                            
+    plt.title("Sepal Length vs Sepal Width of each species")
+    plt.xlabel("Sepal Width cm")
+    plt.ylabel("Sepal Length cm")
     #plt.show()
     plt.savefig('Data Visualisation/sepal_length_width.png')
     return
@@ -44,10 +50,11 @@ def petal_relation():
                 height = 8).map(plt.scatter,
                                 'petal_length',
                                 'petal_width').add_legend()
+    # Setting title and labels for x and y axes
     plt.title("Petal Length vs Petal Width of each species")
     plt.xlabel("Petal Length cm")
     plt.ylabel("Petal Width cm")
-    
+    #plt.show()
     plt.savefig('Data Visualisation/petal_length_width.png')
     return
 
@@ -57,6 +64,7 @@ def petal_sepal_length_relation():
                 height = 8).map(plt.scatter,
                                 'sepal_length',
                                 'petal_length').add_legend()
+    # Setting title and labels for x and y axes
     plt.title("Petal Length vs Sepal Length of each species")
     plt.xlabel("Sepal Length cm")
     plt.ylabel("Petal Length cm")
@@ -69,6 +77,7 @@ def petal_sepal_width_relation():
                 height = 8).map(plt.scatter,
                                 'sepal_width',
                                 'petal_width').add_legend()
+    # Setting title and labels for x and y axes
     plt.title("Petal Width vs Sepal Width of each species")
     plt.xlabel("Sepal Width cm")
     plt.ylabel("Petal Width cm")
@@ -85,8 +94,8 @@ def petal_sepal_width_relation():
 # Commented out because analysis.py is 
 # doing the calling
 petal_relation() 
-#sepal_relation()
-#species()
+sepal_relation()
+species()
 petal_sepal_length_relation()
 petal_sepal_width_relation()
 
