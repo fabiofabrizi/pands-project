@@ -127,3 +127,12 @@ the following:
 'Iris Virginica' has the largest petal lengths and widths of all three species
 'Iris Versicolor' is once again inbetween the two species in terms of petal lengths and widths
 
+
+<b>Sepal and Petal Relationships</b>
+
+From looking at the petal vs sepal length (petal_sepal_length.png) and petal vs sepal width (petal_sepal_width.png)
+we can see that 'Iris Setosa' is the smallest of the three species and 'Iris Virginica' is the largest, with 'Iris Versicolor' being somewhere inbetween the two in terms of size.
+In my opinion, I feel that the above two plots are most important to the layperson or someone (like myself) who knows
+nothing about flowers.
+You could show anyone the two plots and ask "Which is the smallest?" and "Which is the largest?" and more than likely they would point to 'Iris Setosa' and 'Iris Virginica' respectively.
+I believe that so far, meaning has been extracted from a file, that when opened, just shows numbers and text (iris2.csv)
