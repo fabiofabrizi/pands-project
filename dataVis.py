@@ -40,28 +40,40 @@ def sepal_relation():
 
 
 def petal_relation():
-    sns.scatterplot(x='petal_length', y='petal_width',
-                hue='species', data=df, )
-    # Labels for title, x and y axis
-    plt.title("Petal width & length characteristics of each species")
+    sns.FacetGrid(df, hue="species",
+                height = 8).map(plt.scatter,
+                                'petal_length',
+                                'petal_width').add_legend()
+    plt.title("Petal Length vs Petal Width of each species")
     plt.xlabel("Petal Length cm")
     plt.ylabel("Petal Width cm")
-    # Place legend in best spot
-    plt.legend(bbox_to_anchor=(1, 1), loc="best")
-    #plt.show()
+    
     plt.savefig('Data Visualisation/petal_length_width.png')
     return
 
-# Petal Length and Sepal Width across the three species:
-def petal_sepal_relation():
+# Petal Length and Sepal Length across the three species:
+def petal_sepal_length_relation():
     sns.FacetGrid(df, hue="species",
-                height = 6).map(plt.scatter,
+                height = 8).map(plt.scatter,
                                 'sepal_length',
                                 'petal_length').add_legend()
     plt.title("Petal Length vs Sepal Length of each species")
     plt.xlabel("Sepal Length cm")
     plt.ylabel("Petal Length cm")
-    plt.show()
+    #plt.show()
+    plt.savefig('Data Visualisation/petal_sepal_length.png')
+    return
+
+def petal_sepal_width_relation():
+    sns.FacetGrid(df, hue="species",
+                height = 8).map(plt.scatter,
+                                'sepal_width',
+                                'petal_width').add_legend()
+    plt.title("Petal Width vs Sepal Width of each species")
+    plt.xlabel("Sepal Width cm")
+    plt.ylabel("Petal Width cm")
+    #plt.show()
+    plt.savefig('Data Visualisation/petal_sepal_width.png')
     return
 
 # Now we can dig deeper using multivariate analysis
@@ -72,8 +84,9 @@ def petal_sepal_relation():
 # Function calls for testing
 # Commented out because analysis.py is 
 # doing the calling
-#petal_relation() 
+petal_relation() 
 #sepal_relation()
 #species()
-petal_sepal_relation()
+petal_sepal_length_relation()
+petal_sepal_width_relation()
 
