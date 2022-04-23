@@ -20,7 +20,7 @@ eda_to_text()
 
 # Plot of species count - This is just a visual representation of 
 # df.value_counts("species")
-species()
+#species()
 
 # Examination of sepal length and width of the three species
 

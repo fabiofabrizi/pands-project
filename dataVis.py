@@ -52,6 +52,18 @@ def petal_relation():
     plt.savefig('Data Visualisation/petal_length_width.png')
     return
 
+# Petal Length and Sepal Width across the three species:
+def petal_sepal_relation():
+    sns.FacetGrid(df, hue="species",
+                height = 6).map(plt.scatter,
+                                'sepal_length',
+                                'petal_length').add_legend()
+    plt.title("Petal Length vs Sepal Length of each species")
+    plt.xlabel("Sepal Length cm")
+    plt.ylabel("Petal Length cm")
+    plt.show()
+    return
+
 # Now we can dig deeper using multivariate analysis
 # https://www.mygreatlearning.com/blog/introduction-to-multivariate-analysis/
 # Why? Because the data set is multivariate
@@ -63,5 +75,5 @@ def petal_relation():
 #petal_relation() 
 #sepal_relation()
 #species()
-
+petal_sepal_relation()
 
