@@ -58,6 +58,7 @@ def exploratory():
     print(df.describe())
     return
 
+
 # Print to analysis.txt
 def eda_to_text():
     with open('analysis.txt', 'w') as f:

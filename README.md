@@ -141,3 +141,6 @@ I believe that so far, meaning has been extracted from a file, that when opened,
 'pair_plots.png' is a scatter plot of all pairs of attributes.
 If I could only present one plot to my audience, it would be this one, as we can see that petal length and width are highly correlated. In addition, it's clear that no matter what variable is examined, 'Iris Setosa' is clearly apart from the other two species as it has the smallest petal lengths and widths. 'Iris Setosa' also has the smallest sepal 
 lengths but wider sepal widths than the other two species.
+
+<b>Potential Limitations</b>
+Although the pair plots work well for a data set of this size (150), it's clear that they might not work so well for very large data set sizes. 
