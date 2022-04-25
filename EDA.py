@@ -36,6 +36,9 @@ def exploratory():
     # The output of the below shows us rows and columns
     print("\nWhat we want to see now are how many rows and columns\nthere are in the dataset\n")
     print(df.shape)
+    
+    print("These are the column headings of the csv file")
+    print(df.columns)
 
     # Get the info of the dataset
     # This command tells us what type of data is inside the columns

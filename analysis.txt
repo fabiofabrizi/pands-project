@@ -40,6 +40,10 @@ What we want to see now are how many rows and columns
 there are in the dataset
 
 (150, 5)
+These are the column headings
+Index(['sepal_length', 'sepal_width', 'petal_length', 'petal_width',
+       'species'],
+      dtype='object')
 
 We also need to know the type of data inside
 the dataset ie numerical, text, etc
@@ -60,6 +64,7 @@ None
 
 Finally, we use the pandas method describe() to
 perform general descriptive statistics
+Note that petal & sepal lengths and widths are in cm
 
        sepal_length  sepal_width  petal_length  petal_width
 count    150.000000   150.000000    150.000000   150.000000
