@@ -53,7 +53,8 @@ def exploratory():
     # After all that, we now use the describe() method to perform general descriptive statistics:
     # https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html
     # This includes max/min/mean, standard deviation and percentiles. Missing values or NaN are skipped
-    print("\nFinally, we use the pandas method describe() to\nperform general descriptive statistics\n")
+    print("\nFinally, we use the pandas method describe() to\nperform general descriptive statistics")
+    print("Note that petal & sepal lengths and widths are in cm\n")
     print(df.describe())
     return
 
