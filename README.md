@@ -5,6 +5,7 @@
 <div align="center">
     <h3 align="center">pands-project</h3>
     <p align="center">This is the repo for the programming and scripting module project - The Iris Dataset</p>
+    <img src="images/RHS_setosa_1050.jpg" alt="Iris Setosa" width="500" height="500">
 </div>
 
 <!-- TABLE OF CONTENTS -->
