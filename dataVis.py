@@ -95,8 +95,7 @@ def pair_plots():
 
 # Histogram testing
 
-def histograms():
-    return
+
 # Now we can dig deeper using multivariate analysis
 # https://www.mygreatlearning.com/blog/introduction-to-multivariate-analysis/
 # Why? Because the data set is multivariate
@@ -111,4 +110,4 @@ def histograms():
 #petal_sepal_length_relation()
 #petal_sepal_width_relation()
 #pair_plots()
-histograms()
+
