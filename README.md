@@ -9,9 +9,12 @@
 </div>
 
 <!-- TABLE OF CONTENTS -->
+# Table of Contents
+1. **[About The Project]("#about-the-project")**
+2. **[References](#References)**
+
 <div align="left">
-<details>
-  <summary>Table of Contents</summary>
+
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
@@ -27,9 +30,9 @@
     <li><a href="#Preliminary Findings">Preliminary Findings</a></li>
     <li><a href="#Files">Files</a></li>
     <li><a href="#Conclusions">Conclusions</a></li>
-    <li><a href="#References">References</a></li>
+    <li><a href="##References">References</a></li>
   </ol>
-</details>
+
 </div>
 
 
@@ -40,11 +43,14 @@ This is the project for the Programming and Scripting module - Higher Diploma in
 Fisher's Iris Data set is to be researched, and documentation (my opinions) and code (Python) must be produced.
 
 
+
 ## Getting Started
 
 I started by creating the Github repository 'pands-project' and added the data set to it converted from a data file.
 The script for conversion is included. As I've delved deeper into the project, the repository has increased in size.
 An explanation of the files in the repo is further below.
+
+
 
 ## Why - What the task entails
 
@@ -56,24 +62,28 @@ identify what type of Iris they have.
 3) Why Python can be used to learn about the data
 
 
+
 ## Background
+
 From looking at the many blogs/articles written on Fisher's Iris data set, the common theme amongst all of them is:
 
 [1] A dataset  
 [2] Python script(s) to analyse that dataset in order to make sense of the data and/or identify any patterns.  
+
+
 
 ## Research
 
 [1] The Mother
 
 I have no background in horticulture - the furthest my expertise extends to is mowing the grass and a small herb garden.
-However, my mother is a keen gardener, she told me about a scenario that occurs fairly often with her.
+However, my mother is a keen gardener, she told me about a scenario that occurs fairly often with her:
 1) She wants to find out what type of plant/tree/flower/etc she's come across
 2) She takes a picture and some measurements and any other relevant information (acidity of soil, type of shade, etc.)
 3) She then emails RHS (Royal Horticultural Society - she lives in the UK)
 4) Within a few days, someone has responded with the answer. 
 
-So there's a concrete example of a data set point being checked against the data set (or many) in order to produce an answer.  
+So there's a real-life example of a data set point being checked against a data set (or many) in order to produce an answer.  
 
 [2] The internet - specific links are inluded in the python files and/or in the 'References' section below.  
 When one googles 'Iris data set' there's lots of results - Too many for me to examine every single one.
@@ -82,19 +92,23 @@ Some have approached the problem from a Machine Learning angle and have applied 
 
 Some have plotted every single histogram/pie chart/scatter plot/etc known to man. 
 
-I have taken neither approach, instead focussing on whether I can find out enough about the three Iris species to explain the differences to colleagues at work and the **most important statistical analysis** that needs to be done in order to do this.
+I have taken neither approach, instead focussing on whether I can find out enough about the three Iris species to explain the differences to colleagues at work and the **minimum most important statistical analysis** that needs to be done in order to do this.
+
 
 
 ## Preliminary Findings
 
 From all the various articles (aimed at beginners in this field) that I've come across on this topic, there seems to be a common pattern:
-i) Get the dataset
-ii) Check the dataset for null values and remove them
-iii) Get a 'feeling' for the dataset and associated data - ie How many rows/columns, mean/max/min values etc
-iv) Apply some statistical analysis to get a visual representation of the data
-v) Examine the visual representation - Does it show a pattern or something unique that we can use to understand the data set.
+
+i) Get the dataset  
+ii) Check the dataset for null values and remove them  
+iii) Get a 'feeling' for the dataset and associated data - ie How many rows/columns, mean/max/min values etc  
+iv) Apply some statistical analysis to get a visual representation of the data  
+v) Examine the visual representation - Does it show a pattern or something unique that we can use to understand the data set.  
 
 From the process above, one can take a data set and apply the above steps to look for any unique patterns in the data.
+
+
 
 ## Files
 
@@ -188,3 +202,4 @@ Although the pair plots work well for a data set of this size (150), it's clear 
 ## References
 
 **[Maths is fun](https://www.mathsisfun.com/data/standard-deviation.html)**
+**[Choosing the right visualisation techniques for extracting data insights](https://medium.com/analytics-vidhya/choosing-the-right-visualization-techniques-for-extracting-data-insights-34466c9f26e4)**
