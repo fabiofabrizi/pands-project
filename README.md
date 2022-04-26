@@ -3,10 +3,11 @@
 
 
 <div align="center">
-    <h3 align="center">pands-project</h3>
+    <h2 align="center">pands-project</h2>
     <p align="center">This is the repo for the programming and scripting module project - The Iris Dataset</p>
     <img src="images/RHS_setosa_1050.jpg" alt="Iris Setosa" width="500" height="500">
 </div>
+
 
 <!-- TABLE OF CONTENTS -->
 # Table of Contents
@@ -92,7 +93,7 @@ However, my mother is a keen gardener, she told me about a scenario that occurs 
 3) She then emails RHS (Royal Horticultural Society - she lives in the UK)
 4) Within a few days, someone has responded with the answer. 
 
-So there's a real-life example of a data set point being checked against a data set (or many) in order to produce an answer.  
+So there's a *real-life example* of a data set point being checked against a data set (or many) in order to produce an answer. 
 
 [2] The internet - specific links are inluded in the python files and/or in the 'References' section below.  
 When one googles 'Iris data set' there's lots of results - Too many for me to examine every single one.
@@ -101,7 +102,7 @@ Some have approached the problem from a Machine Learning angle and have applied 
 
 Some have plotted every single histogram/pie chart/scatter plot/etc known to man. 
 
-I have taken neither approach, instead focussing on whether I can find out enough about the three Iris species to explain the differences to colleagues at work and the **minimum most important statistical analysis** that needs to be done in order to do this.
+I have taken neither approach, instead focussing on whether I can find out enough about the three Iris species to explain the differences to colleagues at work and the **minimum most important statistical analysis** that needs to be done in order to do this. The reason for me doing so is that everyone is under time constraints, so they have the option of hearing more (digging deeper into the statistics) or ending the meeting because they feel they know enough.
 
 
 
@@ -123,31 +124,41 @@ From the process above, one can take a data set and apply the above steps to loo
 
 There's lots of files - here's an explanation of them:
 
-converter2.py
+**converter2.py**  
 This pulls directly from the main archive at UCI and converts it to a CSV format with headers
 The call to the function is commented out because analysis.py calls it.
 As a precaution, in case there's any issues with reading from remote machine, I've also included
 the file 'iris.data' which is from UCI.
 The file does the task of i) from Preliminary Findings.
 
-iris2.csv
+**iris2.csv**  
 This is the result of converter2.py being run.
 
-env_var.py
+**env_var.py**  
 This is the script that tells the user what versions of software is installed on the local machine.
 The output of this is not printed to analysis.txt as it's only intended to be run if there's something wrong.
 
-EDA.py
-This is the Exploratory Data Analysis of the Iris Data set. We check for missing values, duplicates, etc
-The function is called from analysis.py
+**EDA.py**  
+This is the Exploratory Data Analysis of the Iris Data set. We check for missing values, duplicates, etc.
+Descriptive statistics are also generated here so that one can quickly see the following:
+- count: (The number of not-empty values)
+- mean: (The average (mean)) value
+- std: The standard deviation
+- min: The minimum value
+- 25%: The 25% percentile
+- 50%: The 50% percentile
+- 75%: The 75% percentile
+- max: The maximum value  
+
+The function is called from analysis.py  
 This file does the task of ii) and iii) from Preliminary Findings.
 
 
-dataVis.py
+**dataVis.py**  
 dataVis.py generates all the visualisations and saves them in the 'Data Visualisation' folder.
-The plots saved are 'png' file format.
+The plots saved are 'png' file format.  
 Code comments are used to explain what each function does - in my opinion, there's a progression
-with regards to the analysis.
+with regards to the analysis.  
 This file performs iv) and v) from Preliminary Findings.
 We're examining: 
 - Sepal length and width of the species and looking for patterns,
@@ -155,26 +166,25 @@ We're examining:
 - Correlation (if any) between any variables so that we might infer what's important when examining the three species.
 
 
-analysis.py
+**analysis.py**  
 This calls the functions from the other files so that only one file needs to be run. I've done it in this way
 because I've split it up into parts and thought if the project scope changed it would be better for maintenance 
 or bug fixing if analysis.py just did the function calls. The file is commented with explanations about the functions.
 
 
-analysis.txt
+**analysis.txt**  
 This is the text file that's required to be generated - All that is contained in the file is text, and is a quick way to get an overview of the dataset.
 
 ## Folders
 
 There's only three folders, 'Data Visualisation', 'Images' and 'Resources'.
-Images has just one image and it's the image you see at the top of the README file.
-Data Visualisation is where the all the plots have been saved. I've tried to name them as intuitively as possible, so
+*Images* has just one image and it's the image you see at the top of the README file.
+*Data Visualisation* is where the all the plots have been saved. I've tried to name them as intuitively as possible, so
 that one might look at the name and infer what the plot does.
-'Resources' contains a the iris dataset in csv and data formats so that if there's any issue with the user running the script they can change the script and point it to the local copy.
+*Resources* contains a the iris dataset in csv and data formats so that if there's any issue with the user running the script they can change the script and point it to the local copy.
 
 ## Conclusions
 
-dataVis.py generates all the visualisations and saves them.
 <b>Sepal Relationship</b>
 From looking at the scatterplot in the 'Data Visualisation' folder (sepal_length_width.png) we can determine
 the following:
@@ -212,3 +222,4 @@ Although the pair plots work well for a data set of this size (150), it's clear 
 
 **[Maths is fun](https://www.mathsisfun.com/data/standard-deviation.html)**
 **[Choosing the right visualisation techniques for extracting data insights](https://medium.com/analytics-vidhya/choosing-the-right-visualization-techniques-for-extracting-data-insights-34466c9f26e4)**
+**[Pandas describe() method](https://www.w3schools.com/python/pandas/ref_df_describe.asp#:~:text=The%20describe()%20method%20returns,The%20average%20(mean)%20value.)**
