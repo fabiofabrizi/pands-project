@@ -9,7 +9,7 @@
 </div>
 
 <!-- TABLE OF CONTENTS -->
-<div align="center">
+<div align="left">
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -51,13 +51,13 @@ An explanation of the files in the repo is further below.
 The task, as I understand it, is to take some data - in this case, about Irises
 and interpret it in such a way that:
 1) I learn why the data is collected in the first place
-2) I can then explain to others, whether they have an interest (or not) how to 
+2) I can then explain to others, whether they have an interest (or not) in how to 
 identify what type of Iris they have.
 
 ## Background
-I have no background in horticulture - the furthest my expertise extends to is mowing the grass and a small herb garden.
-However, from looking at the many blogs/articles written on Fisher's Iris data set, the common theme amongst all of them is:
-[1] A dataset
+From looking at the many blogs/articles written on Fisher's Iris data set, the common theme amongst all of them is:
+
+[1] A dataset  
 [2] Python script(s) to analyse that dataset in order to make sense of the data and/or identify any patterns.
 
 ## Research
@@ -65,6 +65,7 @@ However, from looking at the many blogs/articles written on Fisher's Iris data s
 The various sources/sites/etc that I found and used are listed below.
 
 [1] The Mother
+
 I have no background in horticulture - the furthest my expertise extends to is mowing the grass and a small herb garden.
 However, my mother is a keen gardener, she told me about a scenario that occurs fairly often with her.
 1) She wants to find out what type of plant/tree/flower/etc she's come across
