@@ -59,6 +59,11 @@ def exploratory():
     print("\nFinally, we use the pandas method describe() to\nperform general descriptive statistics")
     print("Note that petal & sepal lengths and widths are in cm\n")
     print(df.describe())
+
+    # Checking the mean and median of each species
+    print("\nNow we can follow on from above and examine the descriptive \nstatistics of each species in more detail\n")
+    speciesStats = df.groupby('species').agg(['min', 'median', 'max', 'std'])
+    print(speciesStats)
     return
 
 

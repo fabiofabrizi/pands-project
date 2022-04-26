@@ -185,6 +185,21 @@ that one might look at the name and infer what the plot does.
 
 ## Conclusions
 
+We can look at *analysis.txt* in order to see if we can quickly infer anything about the data set, before looking at plots and they information that they presented us with.  
+*Standard deviation* tells us the average amount of variability for that score, i.e. how far away it is from the mean.  
+So we can see from the general descriptive statistics at the end of *analysis.txt* that sepal width has the smallest standard deviation and petal length the largest.  
+However, when we dive deeper and look at the statistics of each species seperately, we can see:
+- 'Iris Setosa' has the smallest deviations in petal length and width but the largest in sepal width.
+- 'Iris Virginica' has the largest deviations in sepal length and petal length.
+- 'Iris Versicolor' is somewhere inbetween the two in terms of standard deviations of it's features.  
+
+From quickly glancing at the minimum and maximum values of the variables, it can be seen that 'Iris Setosa' is the 
+smallest of the three species, whereas with 'Iris Virginica' there seems to be a large variation in how large the plant (flower) can be.
+
+Further progressing from the above conclusions, we want to see whether a visual representation of the data can indicate 
+to the layperson distinguishing features of the three species.
+
+
 <b>Sepal Relationship</b>
 
 <img src="Data Visualisation/sepal_length_width.png" alt="Iris Setosa">
@@ -230,5 +245,6 @@ Although the pair plots work well for a data set of this size (150), it's clear 
 ## References
 
 **[Maths is fun](https://www.mathsisfun.com/data/standard-deviation.html)**  
+**[Statistics and Standard Deviation](https://www.statisticshowto.com/probability-and-statistics/standard-deviation/)**  
 **[Choosing the right visualisation techniques for extracting data insights](https://medium.com/analytics-vidhya/choosing-the-right-visualization-techniques-for-extracting-data-insights-34466c9f26e4)**  
 **[Pandas describe() method](https://www.w3schools.com/python/pandas/ref_df_describe.asp#:~:text=The%20describe()%20method%20returns,The%20average%20(mean)%20value.)**  
