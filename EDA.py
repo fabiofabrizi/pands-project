@@ -62,7 +62,9 @@ def exploratory():
 
     # Checking the mean and median of each species
     print("\nNow we can follow on from above and examine the descriptive \nstatistics of each species in more detail\n")
-    speciesStats = df.groupby('species').agg(['min', 'median', 'max', 'std'])
+    #speciesStats = df.groupby('species').agg(['min', 'median', 'max', 'std'])
+    # Commented out the above have the kitchen sink below in a tabular format
+    speciesStats = df.groupby('species').describe().T
     print(speciesStats)
     return
 
