@@ -186,6 +186,9 @@ that one might look at the name and infer what the plot does.
 ## Conclusions
 
 <b>Sepal Relationship</b>
+
+<img src="Data Visualisation/sepal_length_width.png" alt="Iris Setosa">
+
 From looking at the scatterplot in the 'Data Visualisation' folder (sepal_length_width.png) we can determine
 the following:
 'Iris Setosa' has larger sepal widths but smaller sepal lengths
@@ -193,6 +196,9 @@ the following:
 'Iris Versicolor' is somewhere inbetween the two species in terms of sepal length and width.
 
 <b>Petal Relationship</b>
+
+<img src="Data Visualisation/petal_length_width.png" alt="Iris Setosa">
+
 From looking at the scatterplot in the 'Data Visualisation' folder (petal_length_width.png) we can determine
 the following: 
 'Iris Setosa' has smaller petal lengths and widths than the other two species
@@ -207,15 +213,18 @@ we can see that 'Iris Setosa' is the smallest of the three species and 'Iris Vir
 In my opinion, I feel that the above two plots are most important to the layperson or someone (like myself) who knows
 nothing about flowers.
 You could show anyone the two plots and ask "Which is the smallest?" and "Which is the largest?" and more than likely they would point to 'Iris Setosa' and 'Iris Virginica' respectively.
-I believe that so far, meaning has been extracted from a file, that when opened, just shows numbers and text (iris2.csv)
+I believe that, so far, meaning has been extracted from a file, that when opened, just shows numbers and text (iris2.csv)
 
 <b>Pair Plots</b>
+
+<img src="Data Visualisation/pair_plots.png" alt="Iris Setosa">
+
 'pair_plots.png' is a scatter plot of all pairs of attributes.
 If I could only present one plot to my audience, it would be this one, as we can see that petal length and width are highly correlated. In addition, it's clear that no matter what variable is examined, 'Iris Setosa' is clearly apart from the other two species as it has the smallest petal lengths and widths. 'Iris Setosa' also has the smallest sepal 
 lengths but wider sepal widths than the other two species.
 
 <b>Potential Limitations</b>
-Although the pair plots work well for a data set of this size (150), it's clear that they might not work so well for very large data set sizes. 
+Although the pair plots work well for a data set of this size (150), it's clear that they might not work so well for very large data set sizes for rows that number in the thousands or tens of thousands.
 
 
 ## References
