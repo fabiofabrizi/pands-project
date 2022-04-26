@@ -11,8 +11,17 @@
 <!-- TABLE OF CONTENTS -->
 # Table of Contents
 1. **[About The Project]("#about-the-project")**
-2. **[References](#References)**
+2. **[Getting Started](#getting-Started)**
+3. **[Why - What the task entails](#why-what-the-task-entails)**
+4. **[Background](#background)**
+5. **[Research](#research)**
+6. **[Preliminary Findings](#preliminary-findings)**
+7. **[Files](#files)**
+8. **[Conclusions](#conclusions)**
+9. **[References](#references)**
 
+
+<!--
 <div align="left">
 
   <ol>
@@ -34,7 +43,7 @@
   </ol>
 
 </div>
-
+-->
 
 
 ## About The Project
