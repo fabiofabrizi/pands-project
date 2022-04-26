@@ -9,6 +9,7 @@
 </div>
 
 <!-- TABLE OF CONTENTS -->
+<div align="center">
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -20,22 +21,20 @@
     </li>
     <li>
       <a href="#Why - What the task entails">Why - What the task entails</a>
-      <ul>
         <li><a href="#Background">Background</a></li>
         <li><a href="#installation">Research</a></li>
-      </ul>
     </li>
     <li><a href="#Preliminary Findings">Preliminary Findings</a></li>
     <li><a href="#Files">Files</a></li>
     <li><a href="#Conclusions">Conclusions</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#References">References</a></li>
   </ol>
 </details>
+</div>
 
 
-### About The Project
+
+## About The Project
 
 This is the project for the Programming and Scripting module - Higher Diploma in Data Analytics.
 Fisher's Iris Data set is to be researched, and documentation (my opinions) and code (Python) must be produced.
@@ -47,7 +46,7 @@ I started by creating the Github repository 'pands-project' and added the data s
 The script for conversion is included. As I've delved deeper into the project, the repository has increased in size.
 An explanation of the files in the repo is further below.
 
-### Why - What the task entails
+## Why - What the task entails
 
 The task, as I understand it, is to take some data - in this case, about Irises
 and interpret it in such a way that:
@@ -55,7 +54,7 @@ and interpret it in such a way that:
 2) I can then explain to others, whether they have an interest (or not) how to 
 identify what type of Iris they have.
 
-### Background
+## Background
 I have no background in horticulture - the furthest my expertise extends to is mowing the grass and a small herb garden.
 However, from looking at the many blogs/articles written on Fisher's Iris data set, the common theme amongst all of them is:
 [1] A dataset
@@ -82,20 +81,22 @@ Some have approached the problem from a Machine Learning angle and have applied 
 Some have plotted every single histogram/pie chart/scatter plot/etc known to man. 
 
 I have taken neither approach, instead focussing on whether I can find out enough about the three Iris species to explain the differences to colleagues at work and the most important statistical analysis that needs to be done in order to do this.
+
+
 ## Preliminary Findings
 
-From all the various articles (aimed at beginners in this field) that I've come across on this topic, there seems to be a common pattern.
+From all the various articles (aimed at beginners in this field) that I've come across on this topic, there seems to be a common pattern:
 i) Get the dataset
 ii) Check the dataset for null values and remove them
 iii) Get a 'feeling' for the dataset and associated data - ie How many rows/columns, mean/max/min values etc
 iv) Apply some statistical analysis to get a visual representation of the data
 v) Examine the visual representation - Does it show a pattern or something unique that we can use to understand the data set.
 
-From the process above, one can take a data set in csv format and apply the above steps to look for any unique patterns in the data.
+From the process above, one can take a data set and apply the above steps to look for any unique patterns in the data.
 
 ## Files
 
-There's lots of files - here's an explanation of them
+There's lots of files - here's an explanation of them:
 
 converter2.py
 This pulls directly from the main archive at UCI and converts it to a CSV format with headers
@@ -138,7 +139,13 @@ or bug fixing if analysis.py just did the function calls. The file is commented 
 analysis.txt
 This is the text file that's required to be generated - All that is contained in the file is text, and is a quick way to get an overview of the dataset.
 
+## Folders
 
+There's only three folders, 'Data Visualisation', 'Images' and 'Resources'.
+Images has just one image and it's the image you see at the top of the README file.
+Data Visualisation is where the all the plots have been saved. I've tried to name them as intuitively as possible, so
+that one might look at the name and infer what the plot does.
+'Resources' contains a the iris dataset in csv and data formats so that if there's any issue with the user running the script they can change the script and point it to the local copy.
 
 ## Conclusions
 
