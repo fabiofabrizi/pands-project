@@ -162,7 +162,7 @@ with regards to the analysis.
 This file performs iv) and v) from Preliminary Findings.
 We're examining: 
 - Sepal length and width of the species and looking for patterns,
-- Petal lengtha and width and looking for patterns,
+- Petal length and width and looking for patterns,
 - Correlation (if any) between any variables so that we might infer what's important when examining the three species.
 
 
@@ -181,7 +181,7 @@ There's only three folders, 'Data Visualisation', 'Images' and 'Resources'.
 *Images* has just one image and it's the image you see at the top of the README file.
 *Data Visualisation* is where the all the plots have been saved. I've tried to name them as intuitively as possible, so
 that one might look at the name and infer what the plot does.
-*Resources* contains a the iris dataset in csv and data formats so that if there's any issue with the user running the script they can change the script and point it to the local copy.
+*Resources* contains a the iris dataset in csv and data formats so that if there's any issue with the user running the script to pull the data remotely than they can change the script and point it to the local copy.
 
 ## Conclusions
 
@@ -209,6 +209,15 @@ and first and third quartiles. The box plot is included below as a way of visual
 From looking at the box plots above, it does indeed confirm what we've seen about 'Iris Setosa' - that is, the smallest deviations in petal length and width and the largest variation in sepal width.  
 What can also be seen from the box plots is that 'Iris Setosa' and 'Iris Virginica' are quite seperate to each other in terms of their characteristics - 'Iris Virginica', apart from sepal width, has greater variation across all characteristics.
 
+
+**Violin Plots**
+
+Following on from box plots which have shown us the standard deviation, minimum, median and maximum values, we can now use box plots to visually see the frequency distribution of the data. We're doing this to see how the frequency distribution affects the numbers, i.e. are there any outliers that are skewing the data?
+The violin plots are overlaid on top of the box plots so that we can have a greater appreciation for the numbers.
+
+<img src="Data Visualisation/box_violin_plots.png" alt="Box plots of species">
+
+From looking at the above plots we can see that 'Iris Setosa' has some outliers when it comes to sepal width and these numbers could potentially be skewing the results. We can also see that 'Iris Virginica' has some outliers around sepal length.
 
 
 **Histograms**

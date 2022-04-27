@@ -27,8 +27,8 @@ ax[1].set_ylabel("Petal Width cm")
 #plt.show()
 
 """
-
-
+"""
+# Below is working
 fig, axes = plt.subplots(2, 2, figsize=(16,9))
 fig.suptitle("Violin Plot & Box Plot to show frequency distribution by species")
 #plt.title("Violin Plot & Box Plot to show frequency distribution")
@@ -40,6 +40,15 @@ sns.boxplot( y='sepal_length', x= 'species', data=df, orient='v' , ax=axes[1, 0]
 sns.violinplot(y='sepal_length', x= 'species', data=df, orient='v' , ax=axes[1, 0] )
 sns.boxplot( y='sepal_width', x= 'species', data=df, orient='v' , ax=axes[1, 1] )
 sns.violinplot(y='sepal_width', x= 'species', data=df, orient='v' , ax=axes[1, 1] )
+plt.show()
+"""
+# draw a histogram,   the kde =False indicates that the kernel function estimation graph is not displayed. 
+# it is set as False.
+fig, axes = plt.subplots(2, 2, figsize=(16,9))
+sns.displot(df.sepal_length,bins=8, kde=False)
+sns.displot(df.sepal_width,bins=13, kde=False)
+sns.displot(df.petal_length, bins=5, kde=False)
+sns.displot(df.petal_width, bins=5,kde=False)
 plt.show()
 
 """

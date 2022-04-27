@@ -3,6 +3,7 @@
 # Fabio Fabrizi
 
 
+from regex import R
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -127,8 +128,20 @@ def box_violin_plots():
     return
 
 # Histogram testing
-
-
+# draw a histogram,   the kde =False indicates that the kernel function estimation graph is not displayed. 
+# it is set as False.
+def histo_plots():
+    # Below we're specifying an area for 2x2 plots
+    sns.set(style="darkgrid")
+    fig, axes = plt.subplots(2, 2, figsize=(16, 9))
+    fig.suptitle("Histograms of all the variables")
+    sns.histplot(df.sepal_length, color="skyblue", kde=False, ax=axes[0, 0])
+    sns.histplot(df.sepal_width, color="olive", kde=False, ax=axes[0, 1])
+    sns.histplot(df.petal_length, color="gold", kde=False, ax=axes[1, 0])
+    sns.histplot(df.petal_width, color="teal", kde=False, ax=axes[1, 1])
+    #plt.show()
+    plt.savefig('Data Visualisation/histograms.png')
+    return
 # Now we can dig deeper using multivariate analysis
 # https://www.mygreatlearning.com/blog/introduction-to-multivariate-analysis/
 # Why? Because the data set is multivariate
@@ -143,6 +156,6 @@ def box_violin_plots():
 #petal_sepal_length_relation()
 #petal_sepal_width_relation()
 #pair_plots()
-box_plots()
-box_violin_plots()
-
+#box_plots()
+#box_violin_plots()
+histo_plots()
