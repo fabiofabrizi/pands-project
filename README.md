@@ -227,7 +227,10 @@ A histogram is different to a bar chart because the bars are connected to each o
 It can be thought of as a picture of the data and in the histograms below:
 - The height of each bar represents the count of each iris (frequency) of that variable
 
-<img src="Data Visualisation/histograms.png" alt="Histograms of variables">
+<img src="Data Visualisation/histograms.png" alt="Histograms of variables">  
+
+Sepal length and sepal width seem to have the only normal distributions whereas petal length and petal width seem 
+to have a distribution below the median (known as negatively skewed).
 
 
 
