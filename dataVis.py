@@ -93,8 +93,10 @@ def pair_plots():
     plt.savefig('Data Visualisation/pair_plots.png')
     return
 
+# Box plots to show the median and the quartiles of each variable.
 def box_plots():
     fig, axes = plt.subplots(2, 2, figsize=(16,9))
+    fig.suptitle("Box Plots to show the min, max, median and quartiles of each variable")
     sns.boxplot( y='petal_width', x= 'species', data=df, orient='v' , ax=axes[0, 0])
     sns.boxplot( y='petal_length', x= 'species', data=df, orient='v' , ax=axes[0, 1])
     sns.boxplot( y='sepal_length', x= 'species', data=df, orient='v' , ax=axes[1, 0])
@@ -102,6 +104,26 @@ def box_plots():
     #plt.show()
     plt.savefig('Data Visualisation/box_plots.png')
 
+    return
+
+
+# Violin plots overlaid on box plots to show the frequency distribution of the data 
+# and how that might affect the numbers that we see.
+
+def box_violin_plots():
+    fig, axes = plt.subplots(2, 2, figsize=(16,9))
+    fig.suptitle("Violin Plot & Box Plot to show frequency distribution by species")
+    #plt.title("Violin Plot & Box Plot to show frequency distribution")
+    sns.boxplot( y='petal_width', x= 'species', data=df, orient='v' , ax=axes[0, 0] )
+    sns.violinplot( y='petal_width', x= 'species', data=df, orient='v' , ax=axes[0, 0] )
+    sns.boxplot( y='petal_length', x= 'species', data=df, orient='v' , ax=axes[0, 1] )
+    sns.violinplot( y='petal_length', x= 'species', data=df, orient='v' , ax=axes[0, 1] )
+    sns.boxplot( y='sepal_length', x= 'species', data=df, orient='v' , ax=axes[1, 0] )
+    sns.violinplot(y='sepal_length', x= 'species', data=df, orient='v' , ax=axes[1, 0] )
+    sns.boxplot( y='sepal_width', x= 'species', data=df, orient='v' , ax=axes[1, 1] )
+    sns.violinplot(y='sepal_width', x= 'species', data=df, orient='v' , ax=axes[1, 1] )
+    #plt.show()
+    plt.savefig('Data Visualisation/box_violin_plots.png')
     return
 
 # Histogram testing
@@ -114,7 +136,7 @@ def box_plots():
 
 # Function calls for testing
 # Commented out because analysis.py is 
-# doing the calling
+# doing the calling of the functions below.
 #petal_relation() 
 #sepal_relation()
 #species()
@@ -122,4 +144,5 @@ def box_plots():
 #petal_sepal_width_relation()
 #pair_plots()
 box_plots()
+box_violin_plots()
 

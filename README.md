@@ -209,6 +209,8 @@ and first and third quartiles. The box plot is included below as a way of visual
 From looking at the box plots above, it does indeed confirm what we've seen about 'Iris Setosa' - that is, the smallest deviations in petal length and width and the largest variation in sepal width.  
 What can also be seen from the box plots is that 'Iris Setosa' and 'Iris Virginica' are quite seperate to each other in terms of their characteristics - 'Iris Virginica', apart from sepal width, has greater variation across all characteristics.
 
+
+
 **Histograms**
 
 A histogram is a type of plot that lets us see the frequency distribution (also known as shape) of a set of data.
@@ -269,3 +271,4 @@ Although the pair plots work well for a data set of this size (150), it's clear 
 **[Choosing the right visualisation techniques for extracting data insights](https://medium.com/analytics-vidhya/choosing-the-right-visualization-techniques-for-extracting-data-insights-34466c9f26e4)**  
 **[Pandas describe() method](https://www.w3schools.com/python/pandas/ref_df_describe.asp#:~:text=The%20describe()%20method%20returns,The%20average%20(mean)%20value.)**  
 **[Box Plots](https://www.w3schools.com/statistics/statistics_box_plots.php?msclkid=c53adf08c60711ec81a7efa0203468fb)**
+**[A Complete Guide to Violin Plots](https://chartio.com/learn/charts/violin-plot-complete-guide/#:~:text=Violin%20plots%20are%20used%20when%20you%20want%20to,to%20see%20where%20groups%20are%20similar%20or%20different.?msclkid=2e64438ec60a11ecbbceb90391cc19fe)**
