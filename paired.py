@@ -42,6 +42,7 @@ sns.boxplot( y='sepal_width', x= 'species', data=df, orient='v' , ax=axes[1, 1] 
 sns.violinplot(y='sepal_width', x= 'species', data=df, orient='v' , ax=axes[1, 1] )
 plt.show()
 """
+"""
 # draw a histogram,   the kde =False indicates that the kernel function estimation graph is not displayed. 
 # it is set as False.
 fig, axes = plt.subplots(2, 2, figsize=(16,9))
@@ -50,7 +51,7 @@ sns.displot(df.sepal_width,bins=13, kde=False)
 sns.displot(df.petal_length, bins=5, kde=False)
 sns.displot(df.petal_width, bins=5,kde=False)
 plt.show()
-
+"""
 """
 # Violin plot overlaid on box plot to show frequency distribution
 #calyx length 
@@ -83,3 +84,42 @@ sns.scatterplot(x='sepal_length', y='sepal_width',
     plt.show()
     #plt.savefig('Data Visualisation/sepal_length_width.png')
 """
+
+def petal_sepal_width_relation():
+    sns.FacetGrid(df, hue="species",
+                height = 8).map(plt.scatter,
+                                'sepal_width',
+                                'petal_width').add_legend()
+    # Setting title and labels for x and y axes
+    plt.title("Petal Width vs Sepal Width of each species")
+    plt.xlabel("Sepal Width cm")
+    plt.ylabel("Petal Width cm")
+    plt.show()
+    #plt.savefig('Data Visualisation/petal_sepal_width.png')
+    return
+
+#petal_sepal_width_relation()
+
+def histo_plots():
+    # Below we're specifying an area for 2x2 plots
+    sns.set(style="darkgrid")
+    fig, axes = plt.subplots(2, 2, figsize=(16, 9))
+    fig.suptitle("Histograms of all the variables")
+    sns.histplot(df.sepal_length, color="skyblue", kde=False, ax=axes[0, 0])
+    sns.histplot(df.sepal_width, color="olive", kde=False, ax=axes[0, 1])
+    sns.histplot(df.petal_length, color="gold", kde=False, ax=axes[1, 0])
+    sns.histplot(df.petal_width, color="teal", kde=False, ax=axes[1, 1])
+    #plt.show()
+    plt.savefig('Data Visualisation/histograms.png')
+    return
+
+plt.figure(figsize=(16,9))
+sns.set(style="darkgrid")
+sns.color_palette("Paired")
+sns.scatterplot( data= df,
+               x="sepal_width", y="petal_width",
+               hue="species"
+                ).set(title="Petal Width vs Sepal Width of each species")
+plt.xlabel("Sepal Width cm")
+plt.ylabel("Petal Width cm")
+plt.show()

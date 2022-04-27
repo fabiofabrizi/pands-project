@@ -74,17 +74,20 @@ def petal_sepal_length_relation():
     return
 
 def petal_sepal_width_relation():
-    sns.FacetGrid(df, hue="species",
-                height = 8).map(plt.scatter,
-                                'sepal_width',
-                                'petal_width').add_legend()
-    # Setting title and labels for x and y axes
-    plt.title("Petal Width vs Sepal Width of each species")
+    plt.figure(figsize=(16,9))
+    sns.set(style="darkgrid")
+    sns.color_palette("Paired")
+    sns.scatterplot( data= df,
+                x="sepal_width", y="petal_width",
+                hue="species"
+                    ).set(title="Petal Width vs Sepal Width of each species")
     plt.xlabel("Sepal Width cm")
     plt.ylabel("Petal Width cm")
     #plt.show()
     plt.savefig('Data Visualisation/petal_sepal_width.png')
     return
+
+
 
 # Now Let's look at the attributes using a scatterplot within seaborn
 def pair_plots():
@@ -164,7 +167,7 @@ def histo_plots():
 #species()
 #petal_sepal_length_relation()
 #petal_sepal_width_relation()
-pair_plots()
+#pair_plots()
 #box_plots()
 #box_violin_plots()
 #histo_plots()
