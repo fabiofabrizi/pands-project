@@ -25,7 +25,7 @@ def species():
     plt.xlabel("Species")
     plt.ylabel("Count")
     #plt.show()
-    plt.savefig('Data Visualisation/species-plot.png')
+    plt.savefig('Data Visualisation/species-plot.png',  bbox_inches='tight')
     return
 
 # Now lets look at sepal length and sepal width
@@ -42,7 +42,7 @@ def sepal_relation():
     plt.xlabel("Sepal Width cm")
     plt.ylabel("Sepal Length cm")
     #plt.show()
-    plt.savefig('Data Visualisation/sepal_length_width.png')
+    plt.savefig('Data Visualisation/sepal_length_width.png',  bbox_inches='tight')
     return
 
 
@@ -56,7 +56,7 @@ def petal_relation():
     plt.xlabel("Petal Length cm")
     plt.ylabel("Petal Width cm")
     #plt.show()
-    plt.savefig('Data Visualisation/petal_length_width.png')
+    plt.savefig('Data Visualisation/petal_length_width.png', bbox_inches='tight')
     return
 
 # Petal Length and Sepal Length across the three species:
@@ -71,7 +71,7 @@ def petal_sepal_length_relation():
                     ).set(title="Petal Length vs Sepal Length of each species", y=1.08)
     plt.xlabel("Sepal Length cm")
     plt.ylabel("Petal Length cm")
-    plt.savefig('Data Visualisation/petal_sepal_length.png')
+    plt.savefig('Data Visualisation/petal_sepal_length.png',  bbox_inches='tight')
     return
 
 def petal_sepal_width_relation():
@@ -85,7 +85,7 @@ def petal_sepal_width_relation():
     plt.xlabel("Sepal Width cm")
     plt.ylabel("Petal Width cm")
     #plt.show()
-    plt.savefig('Data Visualisation/petal_sepal_width.png')
+    plt.savefig('Data Visualisation/petal_sepal_width.png',  bbox_inches='tight')
     return
 
 
