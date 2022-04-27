@@ -282,6 +282,10 @@ lengths but wider sepal widths than the other two species.
 <b>Potential Limitations</b>
 Although the pair plots work well for a data set of this size (150), it's clear that they might not work so well for very large data set sizes for rows that number in the thousands or tens of thousands.
 
+## Final Thoughts ##  
+
+
+The box plots, scatter plots and pair plots all confirm that petal length is the best variable to distinguish between the three species.
 
 ## References
 

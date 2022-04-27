@@ -62,7 +62,7 @@ def petal_relation():
 # Petal Length and Sepal Length across the three species:
     
 def petal_sepal_length_relation():
-    plt.figure(figsize=(16,9))
+    plt.figure(figsize=(10,6))
     sns.set(style="darkgrid")
     sns.color_palette("Paired")
     sns.scatterplot( data= df,
@@ -75,7 +75,7 @@ def petal_sepal_length_relation():
     return
 
 def petal_sepal_width_relation():
-    plt.figure(figsize=(16,9))
+    plt.figure(figsize=(10,6))
     sns.set(style="darkgrid")
     sns.color_palette("Paired")
     sns.scatterplot( data= df,
