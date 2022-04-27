@@ -204,7 +204,7 @@ to the layperson distinguishing features of the three species.
 A box plot is a type of plot that takes data and shows us the median. From looking it at we can see the minimum, maximum
 and first and third quartiles. The box plot is included below as a way of visually confirming what we've seen in analysis.txt.
 
-<img src="Data Visualisation/box_plots.png" alt="Iris Setosa">
+<img src="Data Visualisation/box_plots.png" alt="Box plots of species">
 
 **Histograms**
 
@@ -219,7 +219,7 @@ It can be thought of as a picture of the data and in the histograms below:
 
 <b>Sepal Relationship</b>
 
-<img src="Data Visualisation/sepal_length_width.png" alt="Iris Setosa">
+<img src="Data Visualisation/sepal_length_width.png" alt="Sepal length and width">
 
 From looking at the scatterplot in the 'Data Visualisation' folder (sepal_length_width.png) we can determine
 the following:
@@ -229,7 +229,7 @@ the following:
 
 <b>Petal Relationship</b>
 
-<img src="Data Visualisation/petal_length_width.png" alt="Iris Setosa">
+<img src="Data Visualisation/petal_length_width.png" alt="Petal length and width">
 
 From looking at the scatterplot in the 'Data Visualisation' folder (petal_length_width.png) we can determine
 the following: 
@@ -249,7 +249,7 @@ I believe that, so far, meaning has been extracted from a file, that when opened
 
 <b>Pair Plots</b>
 
-<img src="Data Visualisation/pair_plots.png" alt="Iris Setosa">
+<img src="Data Visualisation/pair_plots.png" alt="Pair plots">
 
 'pair_plots.png' is a scatter plot of all pairs of attributes.
 If I could only present one plot to my audience, it would be this one, as we can see that petal length and width are highly correlated. In addition, it's clear that no matter what variable is examined, 'Iris Setosa' is clearly apart from the other two species as it has the smallest petal lengths and widths. 'Iris Setosa' also has the smallest sepal 
