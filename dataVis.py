@@ -68,7 +68,7 @@ def petal_sepal_length_relation():
     sns.scatterplot( data= df,
                 x="sepal_length", y="petal_length",
                 hue="species"
-                    ).set(title="Petal Length vs Sepal Length of each species", y=1.08)
+                    ).set(title="Petal Length vs Sepal Length of each species")
     plt.xlabel("Sepal Length cm")
     plt.ylabel("Petal Length cm")
     plt.savefig('Data Visualisation/petal_sepal_length.png',  bbox_inches='tight')
