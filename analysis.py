@@ -46,3 +46,7 @@ petal_sepal_width_relation()
 # If you only had to look at one plot, look at this one as you can see the correlation 
 # between the petal length and petal width.
 pair_plots()
+
+# Now we use Kernel Density Estimation
+# to further drill down the petal length variable to see whether we can make a distinction between the species.
+kde()

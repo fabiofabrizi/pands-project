@@ -155,9 +155,18 @@ def histo_plots():
     #plt.show()
     plt.savefig('Data Visualisation/histograms.png')
     return
+
+def kde():
+    sns.set(style="darkgrid")
+    sns.color_palette("Paired")
+    sns.displot(df, x="petal_length", hue="species", kind="kde" )
+    plt.xlabel("Petal Length cm")
+    #plt.show()
+    plt.savefig('Data Visualisation/kde.png')
+    return    
 # Now we can dig deeper using multivariate analysis
 # https://www.mygreatlearning.com/blog/introduction-to-multivariate-analysis/
-# Why? Because the data set is multivariate
+
 
 
 # Function calls for testing
@@ -172,3 +181,4 @@ def histo_plots():
 #box_plots()
 #box_violin_plots()
 #histo_plots()
+#kde()

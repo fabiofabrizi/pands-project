@@ -138,7 +138,7 @@ plt.ylabel("Petal Length cm")
 
 """
 
-
+"""
 # Petal Length and petal width
 plt.figure(figsize=(16,9))
 sns.set(style="darkgrid")
@@ -150,3 +150,18 @@ sns.scatterplot( data= df,
 plt.xlabel("Petal Length cm")
 plt.ylabel("Petal Width cm")
 plt.show()
+"""
+
+"""
+# petal length
+sns.FacetGrid(df, hue="species", height=5) \
+   .map(sns.distplot, "petal_length") \
+   .add_legend();
+#plt.show()
+"""
+#plt.figure(figsize=(10,6))
+sns.set(style="darkgrid")
+sns.color_palette("Paired")
+sns.displot(df, x="petal_length", hue="species", kind="kde" )
+plt.xlabel("Petal Length cm")
+#plt.show()

@@ -285,10 +285,23 @@ Although the pair plots work well for a data set of this size (150), it's clear 
 ## Final Thoughts ##  
 
 
-The box plots, scatter plots and pair plots all confirm that petal length is the best variable to distinguish between the three species.
+Petal length is the best variable to distinguish between the three species as confirmed by   
+[i] Box plots  
+[ii] Scatter plots  
+[iii] Pair plots  
+For 'Iris Versicolor' there's an overlap at the top of the range (4.5 - 5.2cm) with 'Iris Virginica' as confirmed by the box plot.
+Therefore 'Iris Setosa' is the only species that can (visually) be seperated from the other two by using statistics, from looking at analysis.txt we could see that at the very start (statistics for each species at the end of the file).
+
+However, we can further drill down into the petal length variable using Kernel Density Estimation - which is a way to estimate the probability density function of a variable.
+
+<img src="Data Visualisation/kde.png" alt="Kernel Density Estimation">
+
+The three plots listed above are the ones that I would have in my presentation to colleagues, with possibly the addition of the violin plot overlaid on the box plot to identify any outliers.
+I've tried, from the generation of analysis.txt to build open the basic statistics generated and come up with a visual way to present the information. 
 
 ## References
 
+**[Fishers Iris data set](https://en.wikipedia.org/wiki/Iris_flower_data_set)**
 **[Maths is fun](https://www.mathsisfun.com/data/standard-deviation.html)**  
 **[Statistics and Standard Deviation](https://www.statisticshowto.com/probability-and-statistics/standard-deviation/)**  
 **[Choosing the right visualisation techniques for extracting data insights](https://medium.com/analytics-vidhya/choosing-the-right-visualization-techniques-for-extracting-data-insights-34466c9f26e4)**  
@@ -296,3 +309,4 @@ The box plots, scatter plots and pair plots all confirm that petal length is the
 **[Box Plots](https://www.w3schools.com/statistics/statistics_box_plots.php?msclkid=c53adf08c60711ec81a7efa0203468fb)**
 **[A Complete Guide to Violin Plots](https://chartio.com/learn/charts/violin-plot-complete-guide/#:~:text=Violin%20plots%20are%20used%20when%20you%20want%20to,to%20see%20where%20groups%20are%20similar%20or%20different.?msclkid=2e64438ec60a11ecbbceb90391cc19fe)**
 **[How to fix title being cut off in Seaborn](https://github.com/mwaskom/seaborn/issues/2072)**
+**[Kernel Density Estimation (KDE)](https://en.wikipedia.org/wiki/Kernel_density_estimation#:~:text=In%20statistics%2C%20kernel%20density%20estimation,on%20a%20finite%20data%20sample.)**
