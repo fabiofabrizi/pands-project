@@ -88,8 +88,14 @@ def petal_sepal_width_relation():
 
 # Now Let's look at the attributes using a scatterplot within seaborn
 def pair_plots():
+    # Set title below
+    sns.set(style="darkgrid")
+    pp = sns.pairplot(df, hue="species", height = 2, palette = 'colorblind')
+    #pp.add_legend(title="Relationships between all pairs of variables")
+    #pp.fig.suptitle("Title", y=1.08)
+    #pp.set_title("Title")
     cn = ['setosa', 'versicolor', 'virginica']
-    sns.pairplot(df, hue="species", height = 2, palette = 'colorblind')
+    #sns.pairplot(df, hue="species", height = 2, palette = 'colorblind')
     #plt.show()
     plt.savefig('Data Visualisation/pair_plots.png')
     return
@@ -106,7 +112,6 @@ def box_plots():
     sns.boxplot( y='sepal_width', x= 'species', data=df, orient='v' , ax=axes[1, 1])
     #plt.show()
     plt.savefig('Data Visualisation/box_plots.png')
-
     return
 
 
@@ -159,7 +164,7 @@ def histo_plots():
 #species()
 #petal_sepal_length_relation()
 #petal_sepal_width_relation()
-#pair_plots()
+pair_plots()
 #box_plots()
 #box_violin_plots()
 #histo_plots()

@@ -227,7 +227,7 @@ A histogram is different to a bar chart because the bars are connected to each o
 It can be thought of as a picture of the data and in the histograms below:
 - The height of each bar represents the count of each iris (frequency) of that variable
 
-
+<img src="Data Visualisation/histograms.png" alt="Histograms of variables">
 
 
 
