@@ -66,6 +66,7 @@ def exploratory():
     # Commented out the above have the kitchen sink below in a tabular format
     speciesStats = df.groupby('species').describe().T
     print(speciesStats)
+    print("\n")
     return
 
 
