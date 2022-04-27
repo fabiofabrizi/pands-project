@@ -258,7 +258,11 @@ the following:
 
 <b>Sepal and Petal Relationships</b>  
 
-<img src="Data Visualisation/petal_length_width.png" alt="Petal length and width">
+<img src="Data Visualisation/petal_sepal_length.png" alt="Petal and Sepal length">
+
+
+<img src="Data Visualisation/petal_sepal_width.png" alt="Petal and Sepal width">
+
 
 From looking at the petal vs sepal length (petal_sepal_length.png) and petal vs sepal width (petal_sepal_width.png)
 we can see that 'Iris Setosa' is the smallest of the three species and 'Iris Virginica' is the largest, with 'Iris Versicolor' being somewhere inbetween the two in terms of size.

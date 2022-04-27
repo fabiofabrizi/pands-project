@@ -112,7 +112,7 @@ def histo_plots():
     #plt.show()
     plt.savefig('Data Visualisation/histograms.png')
     return
-
+"""
 plt.figure(figsize=(16,9))
 sns.set(style="darkgrid")
 sns.color_palette("Paired")
@@ -134,4 +134,19 @@ sns.scatterplot( data= df,
                 ).set(title="Petal Length vs Sepal Length of each species")
 plt.xlabel("Sepal Length cm")
 plt.ylabel("Petal Length cm")
+#plt.show()
+
+"""
+
+
+# Petal Length and petal width
+plt.figure(figsize=(16,9))
+sns.set(style="darkgrid")
+sns.color_palette("Paired")
+sns.scatterplot( data= df,
+            x="petal_length", y="petal_width",
+            hue="species"
+                ).set(title="Petal Length vs Petal Width of each species")
+plt.xlabel("Petal Length cm")
+plt.ylabel("Petal Width cm")
 plt.show()
