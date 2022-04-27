@@ -93,6 +93,17 @@ def pair_plots():
     plt.savefig('Data Visualisation/pair_plots.png')
     return
 
+def box_plots():
+    fig, axes = plt.subplots(2, 2, figsize=(16,9))
+    sns.boxplot( y='petal_width', x= 'species', data=df, orient='v' , ax=axes[0, 0])
+    sns.boxplot( y='petal_length', x= 'species', data=df, orient='v' , ax=axes[0, 1])
+    sns.boxplot( y='sepal_length', x= 'species', data=df, orient='v' , ax=axes[1, 0])
+    sns.boxplot( y='sepal_width', x= 'species', data=df, orient='v' , ax=axes[1, 1])
+    #plt.show()
+    plt.savefig('Data Visualisation/box_plots.png')
+
+    return
+
 # Histogram testing
 
 
@@ -110,4 +121,5 @@ def pair_plots():
 #petal_sepal_length_relation()
 #petal_sepal_width_relation()
 #pair_plots()
+box_plots()
 

@@ -26,6 +26,13 @@ ax[1].set_ylabel("Petal Width cm")
 
 plt.show()
 
+fig, axes = plt.subplots(2, 2, figsize=(16,9))
+sns.boxplot( y='petal_width', x= 'species', data=df, orient='v' , ax=axes[0, 0])
+sns.boxplot( y='petal_length', x= 'species', data=df, orient='v' , ax=axes[0, 1])
+sns.boxplot( y='sepal_length', x= 'species', data=df, orient='v' , ax=axes[1, 0])
+sns.boxplot( y='sepal_width', x= 'species', data=df, orient='v' , ax=axes[1, 1])
+plt.show()
+
 """
 sns.scatterplot(x='sepal_length', y='sepal_width',
                 hue='species', data=df, )

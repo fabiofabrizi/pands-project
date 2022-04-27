@@ -199,6 +199,21 @@ smallest of the three species, whereas with 'Iris Virginica' there seems to be a
 Further progressing from the above conclusions, we want to see whether a visual representation of the data can indicate 
 to the layperson distinguishing features of the three species.
 
+**Box Plots**
+
+A box plot is a type of plot that takes data and shows us the median. From looking it at we can see the minimum, maximum
+and first and third quartiles. The box plot is included below as a way of visually confirming what we've seen in analysis.txt.
+
+<img src="Data Visualisation/box_plots.png" alt="Iris Setosa">
+
+**Histograms**
+
+A histogram is a type of plot that lets us see the frequency distribution (also known as shape) of a set of data.
+A histogram is different to a bar chart because the bars are connected to each other, unlike a bar chart for categorical data. 
+It can be thought of as a picture of the data and in the histograms below:
+- The height of each bar represents the count of each iris (frequency) of that variable
+
+
 
 
 
@@ -250,3 +265,4 @@ Although the pair plots work well for a data set of this size (150), it's clear 
 **[Statistics and Standard Deviation](https://www.statisticshowto.com/probability-and-statistics/standard-deviation/)**  
 **[Choosing the right visualisation techniques for extracting data insights](https://medium.com/analytics-vidhya/choosing-the-right-visualization-techniques-for-extracting-data-insights-34466c9f26e4)**  
 **[Pandas describe() method](https://www.w3schools.com/python/pandas/ref_df_describe.asp#:~:text=The%20describe()%20method%20returns,The%20average%20(mean)%20value.)**  
+**[Box Plots](https://www.w3schools.com/statistics/statistics_box_plots.php?msclkid=c53adf08c60711ec81a7efa0203468fb)**
