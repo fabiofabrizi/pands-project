@@ -96,6 +96,8 @@ def pair_plots():
 
 # Box plots to show the median and the quartiles of each variable.
 def box_plots():
+    sns.set(style="darkgrid")
+    sns.set_palette("husl")
     fig, axes = plt.subplots(2, 2, figsize=(16,9))
     fig.suptitle("Box Plots to show the min, max, median and quartiles of each variable")
     sns.boxplot( y='petal_width', x= 'species', data=df, orient='v' , ax=axes[0, 0])
@@ -112,9 +114,11 @@ def box_plots():
 # and how that might affect the numbers that we see.
 
 def box_violin_plots():
+    sns.set(style="darkgrid")
     fig, axes = plt.subplots(2, 2, figsize=(16,9))
     fig.suptitle("Violin Plot & Box Plot to show frequency distribution by species")
     #plt.title("Violin Plot & Box Plot to show frequency distribution")
+    sns.set_palette("husl")
     sns.boxplot( y='petal_width', x= 'species', data=df, orient='v' , ax=axes[0, 0] )
     sns.violinplot( y='petal_width', x= 'species', data=df, orient='v' , ax=axes[0, 0] )
     sns.boxplot( y='petal_length', x= 'species', data=df, orient='v' , ax=axes[0, 1] )
@@ -158,4 +162,4 @@ def histo_plots():
 #pair_plots()
 #box_plots()
 #box_violin_plots()
-histo_plots()
+#histo_plots()

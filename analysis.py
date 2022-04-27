@@ -32,6 +32,8 @@ box_plots()
 # ie are outliers affecting the data?
 box_violin_plots()
 
+# Now we're looking at histograms to get another view of the frequency distribution of the numbers
+histo_plots()
 # Examination of sepal length and width of the three species
 petal_relation() 
 sepal_relation()
