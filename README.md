@@ -208,6 +208,7 @@ and first and third quartiles. The box plot is included below as a way of visual
 
 From looking at the box plots above, it does indeed confirm what we've seen about 'Iris Setosa' - that is, the smallest deviations in petal length and width and the largest variation in sepal width.  
 What can also be seen from the box plots is that 'Iris Setosa' and 'Iris Virginica' are quite seperate to each other in terms of their characteristics - 'Iris Virginica', apart from sepal width, has greater variation across all characteristics.
+So from looking at the above box plots, we can infer that petal length in cm is the best variable to distinguish between the species as all the others have overlapping ranges.
 
 
 **Violin Plots**
@@ -255,7 +256,9 @@ the following:
 'Iris Versicolor' is once again inbetween the two species in terms of petal lengths and widths
 
 
-<b>Sepal and Petal Relationships</b>
+<b>Sepal and Petal Relationships</b>  
+
+<img src="Data Visualisation/petal_length_width.png" alt="Petal length and width">
 
 From looking at the petal vs sepal length (petal_sepal_length.png) and petal vs sepal width (petal_sepal_width.png)
 we can see that 'Iris Setosa' is the smallest of the three species and 'Iris Virginica' is the largest, with 'Iris Versicolor' being somewhere inbetween the two in terms of size.

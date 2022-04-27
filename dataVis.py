@@ -60,16 +60,17 @@ def petal_relation():
     return
 
 # Petal Length and Sepal Length across the three species:
+    
 def petal_sepal_length_relation():
-    sns.FacetGrid(df, hue="species",
-                height = 8).map(plt.scatter,
-                                'sepal_length',
-                                'petal_length').add_legend()
-    # Setting title and labels for x and y axes
-    plt.title("Petal Length vs Sepal Length of each species")
+    plt.figure(figsize=(16,9))
+    sns.set(style="darkgrid")
+    sns.color_palette("Paired")
+    sns.scatterplot( data= df,
+                x="sepal_length", y="petal_length",
+                hue="species"
+                    ).set(title="Petal Length vs Sepal Length of each species", y=1.08)
     plt.xlabel("Sepal Length cm")
     plt.ylabel("Petal Length cm")
-    #plt.show()
     plt.savefig('Data Visualisation/petal_sepal_length.png')
     return
 

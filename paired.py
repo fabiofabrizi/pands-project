@@ -94,7 +94,7 @@ def petal_sepal_width_relation():
     plt.title("Petal Width vs Sepal Width of each species")
     plt.xlabel("Sepal Width cm")
     plt.ylabel("Petal Width cm")
-    plt.show()
+    #plt.show()
     #plt.savefig('Data Visualisation/petal_sepal_width.png')
     return
 
@@ -122,4 +122,16 @@ sns.scatterplot( data= df,
                 ).set(title="Petal Width vs Sepal Width of each species")
 plt.xlabel("Sepal Width cm")
 plt.ylabel("Petal Width cm")
+#plt.show()
+
+
+plt.figure(figsize=(16,9))
+sns.set(style="darkgrid")
+sns.color_palette("Paired")
+sns.scatterplot( data= df,
+            x="sepal_length", y="petal_length",
+            hue="species"
+                ).set(title="Petal Length vs Sepal Length of each species")
+plt.xlabel("Sepal Length cm")
+plt.ylabel("Petal Length cm")
 plt.show()
