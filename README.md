@@ -125,10 +125,11 @@ This is the result of converter2.py being run.
 **env_var.py**  
 This is the script that tells the user what versions of software is installed on the local machine.
 The output of this is not printed to analysis.txt as it's only intended to be run if there's something wrong.
+If it's run, the output is printed to the terminal.
 
 **EDA.py**  
-This is the Exploratory Data Analysis of the Iris Data set. We check for missing values, duplicates, etc.
-Descriptive statistics are also generated here so that one can quickly see the following:
+This is the Exploratory Data Analysis of the Iris Data set. I check for missing values, duplicates, etc.
+Descriptive statistics are also generated here so that I can quickly see the following:
 - count: (The number of not-empty values)
 - mean: (The average (mean)) value
 - std: The standard deviation
@@ -139,25 +140,28 @@ Descriptive statistics are also generated here so that one can quickly see the f
 - max: The maximum value  
 
 The function is called from analysis.py  
-This file does the task of ii) and iii) from Preliminary Findings.
+This file does the task of ii) and iii) from **Methodology**.
 
 
 **dataVis.py**  
 dataVis.py generates all the visualisations and saves them in the 'Data Visualisation' folder.
-The plots saved are 'png' file format.  
-Code comments are used to explain what each function does - in my opinion, there's a progression
-with regards to the analysis.  
+The plots saved are '.png' file format.  
+Code comments are used to explain what each function does.
 This file performs iv) and v) from Preliminary Findings.
-We're examining: 
+I'm examining: 
 - Sepal length and width of the species and looking for patterns,
 - Petal length and width and looking for patterns,
-- Correlation (if any) between any variables so that we might infer what's important when examining the three species.
+- Correlation (if any) between any variables so that I might infer what's important when examining the three species.
 
 
 **analysis.py**  
-This calls the functions from the other files so that only one file needs to be run. I've done it in this way
-because I've split it up into parts and thought if the project scope changed it would be better for maintenance 
-or bug fixing if analysis.py just did the function calls. The file is commented with explanations about the functions.
+This calls the functions from the following files so that only one file needs to be run:  
+[1] *converter2.py*  
+[2] *EDA.py*  
+[3] *dataVis.py*  
+
+I've done it in this way because I've split it up into parts and thought if the project scope changed it would be better for maintenance or bug fixing if analysis.py just did the function calls. 
+The file is commented with explanations about the functions.
 
 
 **analysis.txt**  
