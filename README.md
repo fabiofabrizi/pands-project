@@ -165,22 +165,27 @@ The file is commented with explanations about the functions.
 
 
 **analysis.txt**  
-This is the text file that's required to be generated - All that is contained in the file is text, and is a quick way to get an overview of the dataset.
+This is the text file that's required to be generated - All that is contained in the file is text, and is a quick way to get an overview of the dataset. This file is generated from running *analysis.py*
 
 ## Folders
 
 There's only three folders, 'Data Visualisation', 'Images' and 'Resources'.
-*Images* has just one image and it's the image you see at the top of the README file.
+*Images* has two images:
+[1] The image you see at the top of this file  
+[2] The image in the *About The Project' section to explain what a sepal is.  
+
 *Data Visualisation* is where the all the plots have been saved. I've tried to name them as intuitively as possible, so
 that one might look at the name and infer what the plot does.
+
 *Resources* contains a the iris dataset in csv and data formats so that if there's any issue with the user running the script to pull the data remotely than they can change the script and point it to the local copy.
 
 ## Results
 
-We can look at *analysis.txt* in order to see if we can quickly infer anything about the data set, before looking at plots and they information that they presented us with.  
-*Standard deviation* tells us the average amount of variability for that score, i.e. how far away it is from the mean.  
-So we can see from the general descriptive statistics at the end of *analysis.txt* that sepal width has the smallest standard deviation and petal length the largest.  
-However, when we dive deeper and look at the statistics of each species seperately, we can see:
+I can look at *analysis.txt* in order to see if I can quickly infer anything about the data set, before looking at plots for visual indications of the statistics.  
+
+*Standard deviation* is the average amount of variability for that score, i.e. how far away it is from the mean.  
+It can be seen from the general descriptive statistics at the end of *analysis.txt* that sepal width has the smallest standard deviation and petal length the largest.  
+However, when the statistics of each species are examined seperately, it can be seen:
 - 'Iris Setosa' has the smallest deviations in petal length and width but the largest in sepal width.
 - 'Iris Virginica' has the largest deviations in sepal length and petal length.
 - 'Iris Versicolor' is somewhere inbetween the two in terms of standard deviations of it's features.  
