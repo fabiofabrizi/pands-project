@@ -193,7 +193,7 @@ However, when the statistics of each species are examined seperately, it can be 
 From quickly glancing at the minimum and maximum values of the variables, it can be seen that *'Iris Setosa'* is the 
 smallest of the three species, whereas with *'Iris Virginica'* there seems to be a large variation in how large the plant (flower) can be.
 
-Further progressing from the above results, I now want to start investigating whether a visual representation of the statistics generated from the data can indicate to the layperson any distinguishing features of the three species.
+Further progressing from the above results, further investigations of the variables will indicate whether the layperson can identify any distinguishing features of the three species.
 
 **Box Plots**
 
