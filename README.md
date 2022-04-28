@@ -206,6 +206,8 @@ From looking at the box plots above, it does indeed confirm what was observed ab
 
 What can also be observed from the box plots is that 'Iris Setosa' and 'Iris Virginica' are quite seperate to each other in terms of their characteristics - 'Iris Virginica', apart from sepal width, has greater variation across all characteristics.
 
+For 'Iris Versicolor' there's an overlap at the top of the range (4.5 - 5.2cm) with 'Iris Virginica' as confirmed by the box plot.
+
 From examination of the above box plots, it can be inferred that petal length (in cm) is the best variable to distinguish between the species as all the others have overlapping ranges.
 
 
@@ -304,10 +306,16 @@ Finally, examining the histogram of each individual species:
 <img src="Data Visualisation/species_histo.png" alt="Histogram of each iris species">  
 
 Examining the samples of 'Iris Verisicolor' and 'Iris Virginica' above and below the 4.8cm mark respectively:
-- *'Iris Versicolor'* would have an estimation error of 12% (6/50 x 100)
-- *'Iris Virginica'* would have an estimation error 2% (1/50 x 100)
+- *'Iris Versicolor'* would have an estimation error of 12% (6/50 x 100) as 6 samples are over 4.8cm
+- *'Iris Virginica'* would have an estimation error 2% (1/50 x 100) as 1 sample is less than 4.8cm
 
-Note that these errors would only occur for petal lengths between 4.6 and 5.2cm and below or above these values there would be no errors distinguishing between the three species.
+Note that these errors would only occur for petal length measurements between 4.6 and 5.2cm and below or above these values there would be no errors distinguishing between the three species.
+
+As a result of the previous analysis a formula can be reached with regarding to categorising the three species based on petal length:
+
+[1] If 1 > 'petal length' < 1.9, then the iris species is *'Iris Setosa'*  
+[2] If 3 > 'petal length' < 4.8, then the iris species is *'Iris Versicolor'*  
+[3] If 4.8 > 'petal length' < 6.9, then the iris species is *'Iris Virginica'*
 
 
 ## Conclusion ##  
@@ -317,11 +325,20 @@ Petal length is the best variable to distinguish between the three species as co
 [i] Box plots  
 [ii] Scatter plots  
 [iii] Pair plots  
-For 'Iris Versicolor' there's an overlap at the top of the range (4.5 - 5.2cm) with 'Iris Virginica' as confirmed by the box plot.
-Therefore 'Iris Setosa' is the only species that can (visually) be seperated from the other two by using statistics, from looking at analysis.txt we could see that at the very start (statistics for each species at the end of the file).
 
-The three plots listed above are the ones that I would have in my presentation to colleagues, with possibly the addition of the violin plot overlaid on the box plot to identify any outliers.
-I've tried, from the generation of analysis.txt to build open the basic statistics generated and come up with a visual way to present the information. 
+
+Therefore 'Iris Setosa' is the only species that can clearly (visually) be separated from the other two by using statistics, from looking at analysis.txt we could see that at the very start (statistics for each species at the end of the file).
+
+The three plots listed above are the ones that I would have in my presentation to colleagues, with possibly the addition of the violin plot overlaid on the box plot to identify any outliers.  
+
+The dataset was initially collected to learn more about the three Iris species - whether as part of taxonomy of the species and/or for research.
+
+Python was used along with libraries like matplotlib, numpy and seaborn to learn more about the variables in the data set and the relationship(s) between each other.  
+
+Visually representing the statistical analysis allows the layperson to infer characteristics of the data without being a statistics expert.
+
+From analysis of the variables, *petal length* was identified as being able to identify between the three iris species.
+
 
 ## References
 
