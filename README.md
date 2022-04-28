@@ -14,13 +14,12 @@
 1. **[About The Project]("#about-the-project")**
 2. **[Getting Started](#getting-Started)**
 3. **[Aims](#aims)**
-4. **[Background](#background)**
-5. **[Research](#research)**
-6. **[Methodology](#methodology)**
-7. **[Files](#files)**
-8. **[Results](#results)**
-9. **[Conclusions](#conclusions)**
-10. **[References](#references)**
+4. **[Research](#research)**
+5. **[Methodology](#methodology)**
+6. **[Files](#files)**
+7. **[Results](#results)**
+8. **[Conclusions](#conclusions)**
+9. **[References](#references)**
 
 
 
@@ -49,8 +48,8 @@ There are three species of Iris in the data set:
 [2] 'Iris Versicolor'  
 [3] 'Iris Virginica'
 
-
-The aim of the project is to use Python to analyse the dataset and identify any patterns within the data, if any.  
+From looking at the many blogs/articles written on Fisher's Iris data set, the common theme amongst all of them is the use of a Python script or R script for analysis and identifying any patterns.
+<!--The aim of the project is to use Python to analyse the dataset and identify any patterns within the data, if any.  -->
 
 ## Getting Started
 
@@ -66,14 +65,6 @@ The task, is to take the dataset and:
 1) Learn why the data is collected in the first place
 2) Use Python to learn about the variables within the dataset
 3) Explain to others how to identify what type of Iris they have.
-
-
-
-## Background
-
-From looking at the many blogs/articles written on Fisher's Iris data set, the common theme amongst all of them is:
-
-[1] A Python script or R script to analyse that dataset in order to make sense of the data and/or identify any patterns.  
 
 
 
