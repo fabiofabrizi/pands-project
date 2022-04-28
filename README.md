@@ -181,11 +181,12 @@ that one might look at the name and infer what the plot does.
 
 ## Results
 
-I can look at *analysis.txt* in order to see if I can quickly infer anything about the data set, before looking at plots for visual indications of the statistics.  
+Examining *analysis.txt* indicates whether I can quickly infer anything about the data set, before looking at plots for visual indications of the statistics.  
 
 *Standard deviation* is the average amount of variability for that score, i.e. how far away it is from the mean.  
 It can be seen from the general descriptive statistics at the end of *analysis.txt* that sepal width has the smallest standard deviation and petal length the largest.  
-However, when the statistics of each species are examined seperately, it can be seen:
+
+However, when the statistics of each species are examined seperately, it can be seen that:
 - 'Iris Setosa' has the smallest deviations in petal length and width but the largest in sepal width.
 - 'Iris Virginica' has the largest deviations in sepal length and petal length.
 - 'Iris Versicolor' is somewhere inbetween the two in terms of standard deviations of it's features.  
@@ -193,13 +194,11 @@ However, when the statistics of each species are examined seperately, it can be 
 From quickly glancing at the minimum and maximum values of the variables, it can be seen that 'Iris Setosa' is the 
 smallest of the three species, whereas with 'Iris Virginica' there seems to be a large variation in how large the plant (flower) can be.
 
-Further progressing from the above conclusions, we want to see whether a visual representation of the data can indicate 
-to the layperson distinguishing features of the three species.
+Further progressing from the above results, I now want to start investigating whether a visual representation of the statistics generated from the data can indicate to the layperson any distinguishing features of the three species.
 
 **Box Plots**
 
-A box plot is a type of plot that takes data and shows us the median. From looking it at we can see the minimum, maximum
-and first and third quartiles. The box plot is included below as a way of visually confirming what we've seen in analysis.txt.
+A box plot is a type of plot that takes data and shows us the median. It shows the minimum, maximum and first and third quartiles. The box plot is included below as a way of visually confirming what was seen in analysis.txt.
 
 <img src="Data Visualisation/box_plots.png" alt="Box plots of species">  
 
