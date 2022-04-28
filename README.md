@@ -13,7 +13,7 @@
 # Table of Contents
 1. **[About The Project]("#about-the-project")**
 2. **[Getting Started](#getting-Started)**
-3. **[Why - What the task entails](#why-what-the-task-entails)**
+3. **[Aims](#aims)**
 4. **[Background](#background)**
 5. **[Research](#research)**
 6. **[Preliminary Findings](#preliminary-findings)**
@@ -62,7 +62,7 @@ An explanation of the files in the repo is further below.
 
 
 
-## Why - What the task entails
+## Aims
 
 The task, as I understand it, is to take some data - in this case, about Irises
 and interpret it in such a way that:
@@ -77,8 +77,7 @@ identify what type of Iris they have.
 
 From looking at the many blogs/articles written on Fisher's Iris data set, the common theme amongst all of them is:
 
-[1] A dataset  
-[2] Python script(s) to analyse that dataset in order to make sense of the data and/or identify any patterns.  
+[1] A Python script or R script to analyse that dataset in order to make sense of the data and/or identify any patterns.  
 
 
 
@@ -108,7 +107,7 @@ I have taken neither approach, instead focussing on whether I can find out enoug
 
 ## Preliminary Findings
 
-From all the various articles (aimed at beginners in this field) that I've come across on this topic, there seems to be a common pattern:
+From all the various articles on data analysis and data visualisation (aimed at beginners in this field) that I've come across on this topic, there seems to be a common pattern:
 
 i) Get the dataset  
 ii) Check the dataset for null values and remove them  
@@ -183,7 +182,7 @@ There's only three folders, 'Data Visualisation', 'Images' and 'Resources'.
 that one might look at the name and infer what the plot does.
 *Resources* contains a the iris dataset in csv and data formats so that if there's any issue with the user running the script to pull the data remotely than they can change the script and point it to the local copy.
 
-## Conclusions
+## Results
 
 We can look at *analysis.txt* in order to see if we can quickly infer anything about the data set, before looking at plots and they information that they presented us with.  
 *Standard deviation* tells us the average amount of variability for that score, i.e. how far away it is from the mean.  
@@ -282,7 +281,7 @@ lengths but wider sepal widths than the other two species.
 <b>Potential Limitations</b>
 Although the pair plots work well for a data set of this size (150), it's clear that they might not work so well for very large data set sizes for rows that number in the thousands or tens of thousands.
 
-## Final Thoughts ##  
+## Conclusion ##  
 
 
 Petal length is the best variable to distinguish between the three species as confirmed by   
@@ -295,6 +294,8 @@ Therefore 'Iris Setosa' is the only species that can (visually) be seperated fro
 However, we can further drill down into the petal length variable using Kernel Density Estimation - which is a way to estimate the probability density function of a variable.
 
 <img src="Data Visualisation/kde.png" alt="Kernel Density Estimation">
+
+Considering the two species 'Iris Versicolor' and 'Iris Virginica', at 4.8cm there's a cross-over between the two species.
 
 The three plots listed above are the ones that I would have in my presentation to colleagues, with possibly the addition of the violin plot overlaid on the box plot to identify any outliers.
 I've tried, from the generation of analysis.txt to build open the basic statistics generated and come up with a visual way to present the information. 
@@ -310,3 +311,4 @@ I've tried, from the generation of analysis.txt to build open the basic statisti
 **[A Complete Guide to Violin Plots](https://chartio.com/learn/charts/violin-plot-complete-guide/#:~:text=Violin%20plots%20are%20used%20when%20you%20want%20to,to%20see%20where%20groups%20are%20similar%20or%20different.?msclkid=2e64438ec60a11ecbbceb90391cc19fe)**
 **[How to fix title being cut off in Seaborn](https://github.com/mwaskom/seaborn/issues/2072)**
 **[Kernel Density Estimation (KDE)](https://en.wikipedia.org/wiki/Kernel_density_estimation#:~:text=In%20statistics%2C%20kernel%20density%20estimation,on%20a%20finite%20data%20sample.)**
+**[Statistics by Jim](https://statisticsbyjim.com/basics/percentiles/#:~:text=Percentiles%20indicate%20the%20percentage%20of,91%20percent%20of%20other%20scores.)**
