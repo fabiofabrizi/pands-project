@@ -51,20 +51,18 @@ There are three species of Iris in the data set:
 
 ## Getting Started
 
-I started by creating the Github repository 'pands-project' and added the data set to it converted from a data file.
-The script for conversion is included. As I've delved deeper into the project, the repository has increased in size.
+I started by creating the Github repository 'pands-project' and added the dataset to it converted from a data file.
+The script for conversion is included. As I've characterised the dataset, python scripts have been produced that in turn have generated plots of statistical analysis of the dataset.
 An explanation of the files in the repo is further below.
 
 
 
 ## Aims
 
-The task, as I understand it, is to take some data - in this case, about Irises
-and interpret it in such a way that:
-1) I learn why the data is collected in the first place
-2) I can then explain to others, whether they have an interest (or not) in how to 
-identify what type of Iris they have.
-3) Why Python can be used to learn about the data
+The task, is to take the dataset and:  
+1) Learn why the data is collected in the first place
+2) Use Python to learn about the variables within the dataset
+3) Explain to others how to identify what type of Iris they have.
 
 
 
@@ -308,3 +306,4 @@ I've tried, from the generation of analysis.txt to build open the basic statisti
 **[Kernel Density Estimation (KDE)](https://en.wikipedia.org/wiki/Kernel_density_estimation#:~:text=In%20statistics%2C%20kernel%20density%20estimation,on%20a%20finite%20data%20sample.)**
 **[Statistics by Jim](https://statisticsbyjim.com/basics/percentiles/#:~:text=Percentiles%20indicate%20the%20percentage%20of,91%20percent%20of%20other%20scores.)**
 **[What is a Sepal?](https://en.wikipedia.org/wiki/Sepal)**
+**[Markdown guide](https://www.markdownguide.org/basic-syntax/)**
