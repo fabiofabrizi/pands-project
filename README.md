@@ -237,28 +237,26 @@ to have a distribution below the median (known as negatively skewed).
 
 
 
-<b>Sepal Relationship</b>
+**Sepal Relationship**
 
 <img src="Data Visualisation/sepal_length_width.png" alt="Sepal length and width">
 
-From looking at the scatterplot in the 'Data Visualisation' folder (sepal_length_width.png) we can determine
-the following:
-'Iris Setosa' has larger sepal widths but smaller sepal lengths
-'Iris Virginica' has larger sepal lengths but smaller sepal widths
-'Iris Versicolor' is somewhere inbetween the two species in terms of sepal length and width.
+From looking at the scatterplot above (sepal_length_width.png) it can be observed:  
+- 'Iris Setosa' has larger sepal widths but smaller sepal lengths
+- 'Iris Virginica' has larger sepal lengths but smaller sepal widths
+- 'Iris Versicolor' is somewhere inbetween the two species in terms of sepal length and width.
 
-<b>Petal Relationship</b>
+**Petal Relationship**
 
 <img src="Data Visualisation/petal_length_width.png" alt="Petal length and width">
 
-From looking at the scatterplot in the 'Data Visualisation' folder (petal_length_width.png) we can determine
-the following: 
-'Iris Setosa' has smaller petal lengths and widths than the other two species
-'Iris Virginica' has the largest petal lengths and widths of all three species
-'Iris Versicolor' is once again inbetween the two species in terms of petal lengths and widths
+From looking at the scatterplot above (petal_length_width.png) it can be observed:  
+- 'Iris Setosa' has smaller petal lengths and widths than the other two species  
+- 'Iris Virginica' has the largest petal lengths and widths of all three species  
+- 'Iris Versicolor' is once again inbetween the two species in terms of petal lengths and widths  
 
 
-<b>Sepal and Petal Relationships</b>  
+**Sepal and Petal Relationships**  
 
 <img src="Data Visualisation/petal_sepal_length.png" alt="Petal and Sepal length">
 
