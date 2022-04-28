@@ -283,7 +283,7 @@ Pair plots are used to observe the relationship between two variables.
 If I could only present one plot to my audience, it would be this one, as it can be seen that petal length and width are highly correlated. In addition, it's clear that no matter what variable is examined, 'Iris Setosa' is clearly apart from the other two species as it has the smallest petal lengths and widths. 'Iris Setosa' also has the smallest sepal 
 lengths but wider sepal widths than the other two species.
 
-<b>Potential Limitations</b>
+**Potential Limitations**
 Although the pair plots work well for a data set of this size (150), it's clear that they might not work so well for very large data set sizes for rows that number in the thousands or tens of thousands.
 This is dependent on the amount of RAM on the users machine and two workarounds are suggested:  
 [1] Take a sample of the dataset and use pair plots to visualise the relationship between the variables  
@@ -292,6 +292,12 @@ This is dependent on the amount of RAM on the users machine and two workarounds 
 **Petal Length and Width**
 
 Examining the *petal length* and *petal width* variables in more detail, *petal length* has a steeper frequency distribution, so if this variable was chosen instead of *petal width* to distinguish between the species there would be less margin for error.
+
+The *petal length* variable can be examined in more detail by plotting *Kernel Density Estimation* - which is a way to estimate the probability function of a variable.
+
+<img src="Data Visualisation/kde.png" alt="Kernel Density Estimation">
+
+Considering the two species 'Iris Versicolor' and 'Iris Virginica', at 4.8cm there's a cross-over between the two species.
 
 ## Conclusion ##  
 
@@ -302,12 +308,6 @@ Petal length is the best variable to distinguish between the three species as co
 [iii] Pair plots  
 For 'Iris Versicolor' there's an overlap at the top of the range (4.5 - 5.2cm) with 'Iris Virginica' as confirmed by the box plot.
 Therefore 'Iris Setosa' is the only species that can (visually) be seperated from the other two by using statistics, from looking at analysis.txt we could see that at the very start (statistics for each species at the end of the file).
-
-However, we can further drill down into the petal length variable using Kernel Density Estimation - which is a way to estimate the probability density function of a variable.
-
-<img src="Data Visualisation/kde.png" alt="Kernel Density Estimation">
-
-Considering the two species 'Iris Versicolor' and 'Iris Virginica', at 4.8cm there's a cross-over between the two species.
 
 The three plots listed above are the ones that I would have in my presentation to colleagues, with possibly the addition of the violin plot overlaid on the box plot to identify any outliers.
 I've tried, from the generation of analysis.txt to build open the basic statistics generated and come up with a visual way to present the information. 
