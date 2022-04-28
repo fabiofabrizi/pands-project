@@ -218,12 +218,14 @@ The violin plots are overlaid on top of the box plots to have visual representat
 
 <img src="Data Visualisation/box_violin_plots.png" alt="Box plots of species">
 
-From looking at the above plots it can be observed that 'Iris Setosa' has some outliers when it comes to sepal width and these numbers could potentially be skewing the results. It can also be observed that 'Iris Virginica' has some outliers around sepal length.
+From looking at the above plots it can be observed that:
+- 'Iris Setosa' has some outliers when it comes to sepal width, potentially be skewing the results.
+- 'Iris Virginica' has some outliers around sepal length.
 
 
 **Histograms**
 
-A histogram is a type of plot that lets us see the frequency distribution (also known as shape) of a set of data.
+A histogram is a type of plot that visualises the frequency distribution (also known as shape) of a set of data.
 A histogram is different to a bar chart because the bars are connected to each other, unlike a bar chart for categorical data. 
 It can be thought of as a picture of the data and in the histograms below:
 - The height of each bar represents the count of each iris (frequency) of that variable
