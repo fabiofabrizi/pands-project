@@ -49,11 +49,14 @@ There are three species of Iris in the data set:
 [2] 'Iris Versicolor'  
 [3] 'Iris Virginica'
 
+
+The aim of the project is to use Python to analyse the dataset and identify any patterns within the data, if any.  
+
 ## Getting Started
 
 I started by creating the Github repository 'pands-project' and added the dataset to it converted from a data file.
 The script for conversion is included. As I've characterised the dataset, python scripts have been produced that in turn have generated plots of statistical analysis of the dataset.
-An explanation of the files in the repo is further below.
+Explanations of the files in this repository are below.
 
 
 
@@ -98,7 +101,7 @@ I have taken neither approach, instead focussing on whether I can find out enoug
 
 
 
-## Preliminary Findings
+## Methodology
 
 From all the various articles on data analysis and data visualisation (aimed at beginners in this field) that I've come across on this topic, there seems to be a common pattern:
 
