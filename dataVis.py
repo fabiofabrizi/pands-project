@@ -164,8 +164,15 @@ def kde():
     #plt.show()
     plt.savefig('Data Visualisation/kde.png')
     return    
-# Now we can dig deeper using multivariate analysis
-# https://www.mygreatlearning.com/blog/introduction-to-multivariate-analysis/
+
+def species_histo():
+    sns.set(style="darkgrid")
+    sns.color_palette("colorblind")
+    sns.histplot(df, x="petal_length", hue="species", bins=30 ).set(title="Histograms of each species")
+    plt.xlabel("Petal Length cm")
+    #plt.show()
+    plt.savefig('Data Visualisation/species_histo.png', bbox_inches='tight')
+    return
 
 
 
@@ -182,3 +189,4 @@ def kde():
 #box_violin_plots()
 #histo_plots()
 #kde()
+#species_histo()

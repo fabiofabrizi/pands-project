@@ -299,6 +299,10 @@ The *petal length* variable can be examined in more detail by plotting *Kernel D
 
 Considering the two species 'Iris Versicolor' and 'Iris Virginica', at 4.8cm there's a cross-over between the two species.
 
+Finally, examining the histogram of each individual species:
+
+<img src="Data Visualisation/species_histo.png" alt="Histogram of each iris species">
+
 ## Conclusion ##  
 
 

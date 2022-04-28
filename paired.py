@@ -160,8 +160,10 @@ sns.FacetGrid(df, hue="species", height=5) \
 #plt.show()
 """
 #plt.figure(figsize=(10,6))
-sns.set(style="darkgrid")
-sns.color_palette("Paired")
-sns.displot(df, x="petal_length", hue="species", kind="kde" )
-plt.xlabel("Petal Length cm")
-#plt.show()
+def species_histo():
+    sns.set(style="darkgrid")
+    sns.color_palette("colorblind")
+    sns.histplot(df, x="petal_length", hue="species", bins=30 ).set(title="Histograms of each species")
+    plt.xlabel("Petal Length cm")
+    plt.show()
+    return

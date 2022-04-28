@@ -50,3 +50,7 @@ pair_plots()
 # Now we use Kernel Density Estimation
 # to further drill down the petal length variable to see whether we can make a distinction between the species.
 kde()
+
+# Isolating petal length as a variable and examining the 
+# histograms
+species_histo()
