@@ -286,8 +286,12 @@ lengths but wider sepal widths than the other two species.
 <b>Potential Limitations</b>
 Although the pair plots work well for a data set of this size (150), it's clear that they might not work so well for very large data set sizes for rows that number in the thousands or tens of thousands.
 This is dependent on the amount of RAM on the users machine and two workarounds are suggested:  
-[1] Take a sample of the dataset and use pair plots to visualise the relationship between the variables
+[1] Take a sample of the dataset and use pair plots to visualise the relationship between the variables  
 [2] Use software like Dask to work with tools like pandas, numpy, etc on large datasets
+
+**Petal Length and Width**
+
+Examining the *petal length* and *petal width* variables in more detail, *petal length* has a steeper frequency distribution, so if this variable was chosen instead of *petal width* to distinguish between the species there would be less margin for error.
 
 ## Conclusion ##  
 
