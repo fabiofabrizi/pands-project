@@ -198,13 +198,13 @@ Further progressing from the above results, I now want to start investigating wh
 
 **Box Plots**
 
-A box plot is a type of plot that takes data and shows us the median. It shows the minimum, maximum and first and third quartiles. The box plot is included below as a way of visually confirming what was seen in analysis.txt.
+A box plot is a type of plot that takes data and shows us the minimum, maximum, median and first and third quartiles. The box plot is included below as a way of visually confirming what was seen in analysis.txt.
 
 <img src="Data Visualisation/box_plots.png" alt="Box plots of species">  
 
-From looking at the box plots above, it does indeed confirm what we've seen about 'Iris Setosa' - that is, the smallest deviations in petal length and width and the largest variation in sepal width.  
-What can also be seen from the box plots is that 'Iris Setosa' and 'Iris Virginica' are quite seperate to each other in terms of their characteristics - 'Iris Virginica', apart from sepal width, has greater variation across all characteristics.
-So from looking at the above box plots, we can infer that petal length in cm is the best variable to distinguish between the species as all the others have overlapping ranges.
+From looking at the box plots above, it does indeed confirm what was observed about 'Iris Setosa' - that is, it has the smallest deviations in petal length and width and the largest variation in sepal width.  
+What can also be observed from the box plots is that 'Iris Setosa' and 'Iris Virginica' are quite seperate to each other in terms of their characteristics - 'Iris Virginica', apart from sepal width, has greater variation across all characteristics.
+So from examining the above box plots, it can be inferred that petal length (in cm) is the best variable to distinguish between the species as all the others have overlapping ranges.
 
 
 **Violin Plots**
