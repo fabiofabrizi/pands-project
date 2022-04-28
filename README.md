@@ -30,6 +30,7 @@ This is the project for the Programming and Scripting module - Higher Diploma in
 Fisher's Iris Data set is to be researched, and documentation (my opinions) and code (Python) must be produced.
 Fisher's Iris Data set is also known as the *Iris* flower data set and is a multivariate data set introduced by the 
 British statistician and biologist Ronald Fisher in 1936.  
+
 The term *Multivariate* means that multiple variables are in the data set:  
 [1] sepal length  
 [2] sepal width  
@@ -48,7 +49,8 @@ There are three species of Iris in the data set:
 [2] 'Iris Versicolor'  
 [3] 'Iris Virginica'
 
-From looking at the many blogs/articles written on Fisher's Iris data set, the common theme amongst all of them is the use of a Python script or R script for analysis and identifying any patterns.
+From reading the many blogs and articles written on Fisher's Iris data set, the common theme amongst all of them is the use of the Python or R languages to analysis and identify any patterns.
+This pattern is also common for other data analysis projects.
 <!--The aim of the project is to use Python to analyse the dataset and identify any patterns within the data, if any.  -->
 
 ## Getting Started
@@ -88,19 +90,19 @@ Some have approached the problem from a Machine Learning angle and have applied 
 
 Some have plotted every single histogram/pie chart/scatter plot/etc known to man. 
 
-I have taken neither approach, instead focussing on whether I can find out enough about the three Iris species to explain the differences to colleagues at work and the **minimum most important statistical analysis** that needs to be done in order to do this. The reason for me doing so is that everyone is under time constraints, so they have the option of hearing more (digging deeper into the statistics) or ending the meeting because they feel they know enough.
+I have taken neither approach, instead focusing on whether I can find out enough about the three Iris species to explain the differences to colleagues at work and the **minimum most important statistical analysis** that needs to be done in order to do this. The reason for me doing so is that everyone is under time constraints, so they have the option of hearing more (digging deeper into the statistics) or ending the meeting because they feel they know enough.
 
 
 
 ## Methodology
 
-From all the various articles on data analysis and data visualisation (aimed at beginners in this field) that I've come across on this topic, there seems to be a common pattern:
+From all the various articles on data analysis and data visualisation (aimed at beginners in this field) that I've encountered, there's a common pattern:
 
 i) Get the dataset  
 ii) Check the dataset for null values and remove them  
-iii) Get a 'feeling' for the dataset and associated data - ie How many rows/columns, mean/max/min values etc  
+iii) Characterise the dataset and associated data - ie How many rows/columns, mean/max/min values etc  
 iv) Apply some statistical analysis to get a visual representation of the data  
-v) Examine the visual representation - Does it show a pattern or something unique that we can use to understand the data set.  
+v) Examine the visual representation - Does it show a pattern or something unique that I can use to understand the data set.  
 
 From the process above, one can take a data set and apply the above steps to look for any unique patterns in the data.
 
@@ -108,7 +110,7 @@ From the process above, one can take a data set and apply the above steps to loo
 
 ## Files
 
-There's lots of files - here's an explanation of them:
+An explanation of the files in this repository is below:
 
 **converter2.py**  
 This pulls directly from the main archive at UCI and converts it to a CSV format with headers
