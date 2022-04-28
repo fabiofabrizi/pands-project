@@ -241,7 +241,7 @@ to have a distribution below the median (known as negatively skewed).
 
 <img src="Data Visualisation/sepal_length_width.png" alt="Sepal length and width">
 
-From looking at the scatterplot above (sepal_length_width.png) it can be observed:  
+Examining the scatterplot above of *sepal length vs width* (sepal_length_width.png) it can be observed:  
 - 'Iris Setosa' has larger sepal widths but smaller sepal lengths
 - 'Iris Virginica' has larger sepal lengths but smaller sepal widths
 - 'Iris Versicolor' is somewhere inbetween the two species in terms of sepal length and width.
@@ -250,7 +250,7 @@ From looking at the scatterplot above (sepal_length_width.png) it can be observe
 
 <img src="Data Visualisation/petal_length_width.png" alt="Petal length and width">
 
-From looking at the scatterplot above (petal_length_width.png) it can be observed:  
+Examining the scatterplot above of *petal length vs width* (petal_length_width.png) it can be observed:  
 - 'Iris Setosa' has smaller petal lengths and widths than the other two species  
 - 'Iris Virginica' has the largest petal lengths and widths of all three species  
 - 'Iris Versicolor' is once again inbetween the two species in terms of petal lengths and widths  
@@ -264,14 +264,18 @@ From looking at the scatterplot above (petal_length_width.png) it can be observe
 <img src="Data Visualisation/petal_sepal_width.png" alt="Petal and Sepal width">
 
 
-From looking at the petal vs sepal length (petal_sepal_length.png) and petal vs sepal width (petal_sepal_width.png)
-we can see that 'Iris Setosa' is the smallest of the three species and 'Iris Virginica' is the largest, with 'Iris Versicolor' being somewhere inbetween the two in terms of size.
-In my opinion, I feel that the above two plots are most important to the layperson or someone (like myself) who knows
-nothing about flowers.
-You could show anyone the two plots and ask "Which is the smallest?" and "Which is the largest?" and more than likely they would point to 'Iris Setosa' and 'Iris Virginica' respectively.
-I believe that, so far, meaning has been extracted from a file, that when opened, just shows numbers and text (iris2.csv)
+Examining the plots above: 
+*petal vs sepal length* (petal_sepal_length.png) and *petal vs sepal width* (petal_sepal_width.png)
+- 'Iris Setosa' is the smallest of the three species 
+- 'Iris Virginica' is the largest
+- 'Iris Versicolor' is inbetween the two in terms of size.  
 
-<b>Pair Plots</b>
+The above two plots indicate to the layperson the smallest and largest species of iris in the dataset.
+At this point, visual representation of statistics have been used to indicate to the reader which variables should be considered in order to identify between the three species.
+
+**Pair Plots**
+
+Pair plots are used to observe the relationship between two variables.
 
 <img src="Data Visualisation/pair_plots.png" alt="Pair plots">
 
