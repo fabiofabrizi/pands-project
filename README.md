@@ -112,10 +112,10 @@ From the process above, one can take a data set and apply the above steps to loo
 An explanation of the files in this repository is below:
 
 **converter2.py**  
-This pulls directly from the main archive at UCI (University Of California, Irvine) and converts it to a CSV format with headers.
+This pulls directly from the main data set archive at UCI (University Of California, Irvine) and converts it to a CSV format with headers.  
 The call to the function is commented out because *analysis.py* calls it.
 As a precaution, in case there's any issues with reading from remote machine, I've also included
-the file 'iris.data' which is from UCI.
+the file 'iris.data' which is from UCI.  
 The file does the task of i) from **Methodology**.
 
 **iris2.csv**  
