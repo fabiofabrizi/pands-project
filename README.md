@@ -44,7 +44,7 @@ A sepal is the part of a flower that function as protection from a flower in bud
 <img src="images/640px-sepal.svg.png" alt="Sepal Explanation" >
 
 
-There are three species of Iris in the data set:
+There are three species of Iris in the data set:  
 [1] 'Iris Setosa'  
 [2] 'Iris Versicolor'  
 [3] 'Iris Virginica'
