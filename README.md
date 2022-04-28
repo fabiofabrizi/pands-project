@@ -279,12 +279,15 @@ Pair plots are used to observe the relationship between two variables.
 
 <img src="Data Visualisation/pair_plots.png" alt="Pair plots">
 
-'pair_plots.png' is a scatter plot of all pairs of attributes.
-If I could only present one plot to my audience, it would be this one, as we can see that petal length and width are highly correlated. In addition, it's clear that no matter what variable is examined, 'Iris Setosa' is clearly apart from the other two species as it has the smallest petal lengths and widths. 'Iris Setosa' also has the smallest sepal 
+'pair_plots.png' is a scatter plot of all pairs of attributes.  
+If I could only present one plot to my audience, it would be this one, as it can be seen that petal length and width are highly correlated. In addition, it's clear that no matter what variable is examined, 'Iris Setosa' is clearly apart from the other two species as it has the smallest petal lengths and widths. 'Iris Setosa' also has the smallest sepal 
 lengths but wider sepal widths than the other two species.
 
 <b>Potential Limitations</b>
 Although the pair plots work well for a data set of this size (150), it's clear that they might not work so well for very large data set sizes for rows that number in the thousands or tens of thousands.
+This is dependent on the amount of RAM on the users machine and two workarounds are suggested:  
+[1] Take a sample of the dataset and use pair plots to visualise the relationship between the variables
+[2] Use software like Dask to work with tools like pandas, numpy, etc on large datasets
 
 ## Conclusion ##  
 
@@ -320,3 +323,4 @@ I've tried, from the generation of analysis.txt to build open the basic statisti
 **[Statistics by Jim](https://statisticsbyjim.com/basics/percentiles/#:~:text=Percentiles%20indicate%20the%20percentage%20of,91%20percent%20of%20other%20scores.)**
 **[What is a Sepal?](https://en.wikipedia.org/wiki/Sepal)**
 **[Markdown guide](https://www.markdownguide.org/basic-syntax/)**
+**[Limitations of sns.pairplot for large datasets](https://www.kaggle.com/questions-and-answers/182729)**
