@@ -186,12 +186,12 @@ Examining *analysis.txt* indicates whether I can quickly infer anything about th
 It can be seen from the general descriptive statistics at the end of *analysis.txt* that sepal width has the smallest standard deviation and petal length the largest.  
 
 However, when the statistics of each species are examined seperately, it can be seen that:
-- 'Iris Setosa' has the smallest deviations in petal length and width but the largest in sepal width.
-- 'Iris Virginica' has the largest deviations in sepal length and petal length.
-- 'Iris Versicolor' is somewhere inbetween the two in terms of standard deviations of it's features.  
+- *'Iris Setosa'* has the smallest deviations in petal length and width but the largest in sepal width.
+- *'Iris Virginica'* has the largest deviations in sepal length and petal length.
+- *'Iris Versicolor'* is somewhere inbetween the two in terms of standard deviations of it's features.  
 
-From quickly glancing at the minimum and maximum values of the variables, it can be seen that 'Iris Setosa' is the 
-smallest of the three species, whereas with 'Iris Virginica' there seems to be a large variation in how large the plant (flower) can be.
+From quickly glancing at the minimum and maximum values of the variables, it can be seen that *'Iris Setosa'* is the 
+smallest of the three species, whereas with *'Iris Virginica'* there seems to be a large variation in how large the plant (flower) can be.
 
 Further progressing from the above results, I now want to start investigating whether a visual representation of the statistics generated from the data can indicate to the layperson any distinguishing features of the three species.
 
@@ -201,11 +201,11 @@ A box plot is a type of plot that takes data and shows us the minimum, maximum, 
 
 <img src="Data Visualisation/box_plots.png" alt="Box plots of species">  
 
-From looking at the box plots above, it does indeed confirm what was observed about 'Iris Setosa' - that is, it has the smallest deviations in petal length and width and the largest variation in sepal width.  
+From looking at the box plots above, it does indeed confirm what was observed about *'Iris Setosa'* - that is, it has the smallest deviations in petal length and width and the largest variation in sepal width.  
 
-What can also be observed from the box plots is that 'Iris Setosa' and 'Iris Virginica' are quite seperate to each other in terms of their characteristics - 'Iris Virginica', apart from sepal width, has greater variation across all characteristics.
+What can also be observed from the box plots is that *'Iris Setosa'* and *'Iris Virginica'* are quite seperate to each other in terms of their characteristics - *'Iris Virginica'*, apart from sepal width, has greater variation across all characteristics.
 
-For 'Iris Versicolor' there's an overlap at the top of the range (4.5 - 5.2cm) with 'Iris Virginica' as confirmed by the box plot.
+For *'Iris Versicolor'* there's an overlap at the top of the range (4.5 - 5.2cm) with *'Iris Virginica'* as confirmed by the box plot.
 
 From examination of the above box plots, it can be inferred that petal length (in cm) is the best variable to distinguish between the species as all the others have overlapping ranges.
 
@@ -220,8 +220,8 @@ The violin plots are overlaid on top of the box plots to have visual representat
 <img src="Data Visualisation/box_violin_plots.png" alt="Box plots of species">
 
 From looking at the above plots it can be observed that:
-- 'Iris Setosa' has some outliers when it comes to sepal width, potentially be skewing the results.
-- 'Iris Virginica' has some outliers around sepal length.
+- *'Iris Setosa'* has some outliers when it comes to sepal width, potentially be skewing the results.
+- *'Iris Virginica'* has some outliers around sepal length.
 
 
 **Histograms**
@@ -243,18 +243,18 @@ to have a distribution below the median (known as negatively skewed).
 <img src="Data Visualisation/sepal_length_width.png" alt="Sepal length and width">
 
 Examining the scatterplot above of *sepal length vs width* (sepal_length_width.png) it can be observed:  
-- 'Iris Setosa' has larger sepal widths but smaller sepal lengths
-- 'Iris Virginica' has larger sepal lengths but smaller sepal widths
-- 'Iris Versicolor' is somewhere inbetween the two species in terms of sepal length and width.
+- *'Iris Setosa'* has larger sepal widths but smaller sepal lengths
+- *'Iris Virginica'* has larger sepal lengths but smaller sepal widths
+- *'Iris Versicolor'* is somewhere inbetween the two species in terms of sepal length and width.
 
 **Petal Relationship**
 
 <img src="Data Visualisation/petal_length_width.png" alt="Petal length and width">
 
 Examining the scatterplot above of *petal length vs width* (petal_length_width.png) it can be observed:  
-- 'Iris Setosa' has smaller petal lengths and widths than the other two species  
-- 'Iris Virginica' has the largest petal lengths and widths of all three species  
-- 'Iris Versicolor' is once again inbetween the two species in terms of petal lengths and widths  
+- *'Iris Setosa'* has smaller petal lengths and widths than the other two species  
+- *'Iris Virginica'* has the largest petal lengths and widths of all three species  
+- *'Iris Versicolor'* is once again inbetween the two species in terms of petal lengths and widths  
 
 
 **Sepal and Petal Relationships**  
@@ -267,9 +267,9 @@ Examining the scatterplot above of *petal length vs width* (petal_length_width.p
 
 Examining the plots above: 
 *petal vs sepal length* (petal_sepal_length.png) and *petal vs sepal width* (petal_sepal_width.png)
-- 'Iris Setosa' is the smallest of the three species 
-- 'Iris Virginica' is the largest
-- 'Iris Versicolor' is inbetween the two in terms of size.  
+- *'Iris Setosa'* is the smallest of the three species 
+- *'Iris Virginica'* is the largest
+- *'Iris Versicolor'* is inbetween the two in terms of size.  
 
 The above two plots indicate to the layperson the smallest and largest species of iris in the dataset.
 At this point, visual representation of statistics have been used to indicate to the reader which variables should be considered in order to identify between the three species.
@@ -281,8 +281,7 @@ Pair plots are used to observe the relationship between two variables.
 <img src="Data Visualisation/pair_plots.png" alt="Pair plots">
 
 'pair_plots.png' is a scatter plot of all pairs of attributes.  
-If I could only present one plot to my audience, it would be this one, as it can be seen that petal length and width are highly correlated. In addition, it's clear that no matter what variable is examined, 'Iris Setosa' is clearly apart from the other two species as it has the smallest petal lengths and widths. 'Iris Setosa' also has the smallest sepal 
-lengths but wider sepal widths than the other two species.
+If I could only present one plot to my audience, it would be this one, as it can be seen that petal length and width are highly correlated. In addition, it's clear that no matter what variable is examined, *'Iris Setosa'* is clearly apart from the other two species as it has the smallest petal lengths and widths. *'Iris Setosa'* also has the smallest sepal lengths but wider sepal widths than the other two species.
 
 **Potential Limitations**
 Although the pair plots work well for a data set of this size (150), it's clear that they might not work so well for very large data set sizes for rows that number in the thousands or tens of thousands.
@@ -298,7 +297,7 @@ The *petal length* variable can be examined in more detail by plotting *Kernel D
 
 <img src="Data Visualisation/kde.png" alt="Kernel Density Estimation">
 
-Considering the two species 'Iris Versicolor' and 'Iris Virginica', at 4.8cm there's a cross-over between the two species.
+Considering the two species *'Iris Versicolor'* and *'Iris Virginica'*, at 4.8cm there's a cross-over between the two species.
 
 Finally, examining the histogram of each individual species:
 
@@ -326,7 +325,7 @@ Petal length is the best variable to distinguish between the three species as co
 [iii] Pair plots  
 
 
-Therefore 'Iris Setosa' is the only species that can clearly (visually) be separated from the other two by using statistics, from looking at analysis.txt we could see that at the very start (statistics for each species at the end of the file).
+Therefore *'Iris Setosa'* is the only species that can clearly (visually) be separated from the other two by using statistics, from looking at analysis.txt we could see that at the very start (statistics for each species at the end of the file).
 
 The three plots listed above are the ones that I would have in my presentation to colleagues, with possibly the addition of the violin plot overlaid on the box plot to identify any outliers.  
 
