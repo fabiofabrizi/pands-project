@@ -4,7 +4,7 @@
 
 <div align="center">
     <h2 align="center">pands-project</h2>
-    <p align="center">This is the repo for the programming and scripting module project - The Iris Dataset</p>
+    <p align="center">This is the repository for the programming and scripting module project - The Iris Dataset</p>
     <img src="images/RHS_setosa_1050.jpg" alt="Iris Setosa" width="500" height="500">
 </div>
 
@@ -16,43 +16,38 @@
 3. **[Aims](#aims)**
 4. **[Background](#background)**
 5. **[Research](#research)**
-6. **[Preliminary Findings](#preliminary-findings)**
+6. **[Methodology](#methodology)**
 7. **[Files](#files)**
-8. **[Conclusions](#conclusions)**
-9. **[References](#references)**
+8. **[Results](#results)**
+9. **[Conclusions](#conclusions)**
+10. **[References](#references)**
 
 
-<!--
-<div align="left">
-
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-    </li>
-    <li>
-    <a href="#getting-started">Getting Started</a>
-    </li>
-    <li>
-      <a href="#Why - What the task entails">Why - What the task entails</a>
-        <li><a href="#Background">Background</a></li>
-        <li><a href="#installation">Research</a></li>
-    </li>
-    <li><a href="#Preliminary Findings">Preliminary Findings</a></li>
-    <li><a href="#Files">Files</a></li>
-    <li><a href="#Conclusions">Conclusions</a></li>
-    <li><a href="##References">References</a></li>
-  </ol>
-
-</div>
--->
 
 
 ## About The Project
 
 This is the project for the Programming and Scripting module - Higher Diploma in Data Analytics.
 Fisher's Iris Data set is to be researched, and documentation (my opinions) and code (Python) must be produced.
+Fisher's Iris Data set is also known as the *Iris* flower data set and is a multivariate data set introduced by the 
+British statistician and biologist Ronald Fisher in 1936.  
+The term *Multivariate* means that multiple variables are in the data set:  
+[1] sepal length  
+[2] sepal width  
+[3] petal length   
+[4] petal width  
+
+All the variables are measured in centimetres (cm).
+
+A sepal is the part of a flower that function as protection from a flower in bud, and often as support for the petals when in bloom.
+
+<img src="images/640px-sepal.svg.png" alt="Sepal Explanation" >
 
 
+There are three species of Iris in the data set:
+[1] 'Iris Setosa'  
+[2] 'Iris Versicolor'  
+[3] 'Iris Virginica'
 
 ## Getting Started
 
@@ -302,7 +297,7 @@ I've tried, from the generation of analysis.txt to build open the basic statisti
 
 ## References
 
-**[Fishers Iris data set](https://en.wikipedia.org/wiki/Iris_flower_data_set)**
+**[Fishers Iris data set](https://en.wikipedia.org/wiki/Iris_flower_data_set)**  
 **[Maths is fun](https://www.mathsisfun.com/data/standard-deviation.html)**  
 **[Statistics and Standard Deviation](https://www.statisticshowto.com/probability-and-statistics/standard-deviation/)**  
 **[Choosing the right visualisation techniques for extracting data insights](https://medium.com/analytics-vidhya/choosing-the-right-visualization-techniques-for-extracting-data-insights-34466c9f26e4)**  
@@ -312,3 +307,4 @@ I've tried, from the generation of analysis.txt to build open the basic statisti
 **[How to fix title being cut off in Seaborn](https://github.com/mwaskom/seaborn/issues/2072)**
 **[Kernel Density Estimation (KDE)](https://en.wikipedia.org/wiki/Kernel_density_estimation#:~:text=In%20statistics%2C%20kernel%20density%20estimation,on%20a%20finite%20data%20sample.)**
 **[Statistics by Jim](https://statisticsbyjim.com/basics/percentiles/#:~:text=Percentiles%20indicate%20the%20percentage%20of,91%20percent%20of%20other%20scores.)**
+**[What is a Sepal?](https://en.wikipedia.org/wiki/Sepal)**
