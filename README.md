@@ -211,12 +211,14 @@ From examination of the above box plots, it can be inferred that petal length (i
 
 **Violin Plots**
 
-Following on from box plots which have shown us the standard deviation, minimum, median and maximum values, we can now use box plots to visually see the frequency distribution of the data. We're doing this to see how the frequency distribution affects the numbers, i.e. are there any outliers that are skewing the data?
-The violin plots are overlaid on top of the box plots so that we can have a greater appreciation for the numbers.
+Violin plots are used to visualise the frequency distribution of a data set and it's probability density.
+This is done to see how the frequency distribution affects the numbers, i.e. are there any outliers that are skewing the data?
+
+The violin plots are overlaid on top of the box plots to have visual representation of the statistics.
 
 <img src="Data Visualisation/box_violin_plots.png" alt="Box plots of species">
 
-From looking at the above plots we can see that 'Iris Setosa' has some outliers when it comes to sepal width and these numbers could potentially be skewing the results. We can also see that 'Iris Virginica' has some outliers around sepal length.
+From looking at the above plots it can be observed that 'Iris Setosa' has some outliers when it comes to sepal width and these numbers could potentially be skewing the results. It can also be observed that 'Iris Virginica' has some outliers around sepal length.
 
 
 **Histograms**
@@ -309,6 +311,7 @@ I've tried, from the generation of analysis.txt to build open the basic statisti
 **[Box Plots](https://www.w3schools.com/statistics/statistics_box_plots.php?msclkid=c53adf08c60711ec81a7efa0203468fb)**
 **[A Complete Guide to Violin Plots](https://chartio.com/learn/charts/violin-plot-complete-guide/#:~:text=Violin%20plots%20are%20used%20when%20you%20want%20to,to%20see%20where%20groups%20are%20similar%20or%20different.?msclkid=2e64438ec60a11ecbbceb90391cc19fe)**
 **[How to fix title being cut off in Seaborn](https://github.com/mwaskom/seaborn/issues/2072)**
+**[Probability Density Function](https://en.wikipedia.org/wiki/Probability_density_function)**
 **[Kernel Density Estimation (KDE)](https://en.wikipedia.org/wiki/Kernel_density_estimation#:~:text=In%20statistics%2C%20kernel%20density%20estimation,on%20a%20finite%20data%20sample.)**
 **[Statistics by Jim](https://statisticsbyjim.com/basics/percentiles/#:~:text=Percentiles%20indicate%20the%20percentage%20of,91%20percent%20of%20other%20scores.)**
 **[What is a Sepal?](https://en.wikipedia.org/wiki/Sepal)**
