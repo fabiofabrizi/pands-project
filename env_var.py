@@ -15,6 +15,20 @@ print('Python: {}'.format(sys.version))
 import numpy
 print('numpy: {}'.format(numpy.__version__))
 
+# Matplotlib version
+import matplotlib
+print('matplotlib: {}'.format(matplotlib.__version__))
+
+# Pandas 
+import pandas
+print('pandas: {}'.format(pandas.__version__))
+
+# Seaborn
+import seaborn
+print('seaborn: {}'.format(seaborn.__version__))
 # At the time of writing, I have the below versions:
 # Python: 3.9.12
 # numpy: 1.22.3
+# matplotlib: 3.5.1
+# pandas: 1.4.1
+# seaborn: 0.11.2
