@@ -169,7 +169,7 @@ This is the text file that's required to be generated - All that is contained in
 ## Folders
 
 There's only three folders, 'Data Visualisation', 'Images' and 'Resources'.  
-*Images* has two images:
+*Images* has two images:  
 [1] The image you see at the top of this file  
 [2] The image in the *About The Project' section to explain what a sepal is.  
 
