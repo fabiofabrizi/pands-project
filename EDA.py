@@ -67,6 +67,16 @@ def exploratory():
     speciesStats = df.groupby('species').describe().T
     print(speciesStats)
     print("\n")
+
+    #Print the correlation coefficients between the variables.
+    print("Below are the correlation coefficients betweent the variables")
+    print(df.groupby("species").corr())
+    print("\n")
+    print("Positive correlations:")
+    print("'Iris Setosa': sepal length and sepal width")
+    print("'Iris Versicolor': petal length and petal width")
+    print("'Iris Virginica': petal length and sepal length")
+    print("\n")
     return
 
 

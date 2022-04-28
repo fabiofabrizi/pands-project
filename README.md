@@ -301,7 +301,14 @@ Considering the two species 'Iris Versicolor' and 'Iris Virginica', at 4.8cm the
 
 Finally, examining the histogram of each individual species:
 
-<img src="Data Visualisation/species_histo.png" alt="Histogram of each iris species">
+<img src="Data Visualisation/species_histo.png" alt="Histogram of each iris species">  
+
+Examining the samples of 'Iris Verisicolor' and 'Iris Virginica' above and below the 4.8cm mark respectively:
+- *'Iris Versicolor'* would have an estimation error of 12% (6/50 x 100)
+- *'Iris Virginica'* would have an estimation error 2% (1/50 x 100)
+
+Note that these errors would only occur for petal lengths between 4.6 and 5.2cm and below or above these values there would be no errors distinguishing between the three species.
+
 
 ## Conclusion ##  
 
