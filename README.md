@@ -164,11 +164,11 @@ The file is commented with explanations about the functions.
 
 
 **analysis.txt**  
-This is the text file that's required to be generated - All that is contained in the file is text, and is a quick way to get an overview of the dataset. This file is generated from running *analysis.py*
+This is the text file that's required to be generated - All that is contained in the file is text, and is a quick way to get an overview of the dataset. This file is generated from running *analysis.py*.
 
 ## Folders
 
-There's only three folders, 'Data Visualisation', 'Images' and 'Resources'.
+There's only three folders, 'Data Visualisation', 'Images' and 'Resources'.  
 *Images* has two images:
 [1] The image you see at the top of this file  
 [2] The image in the *About The Project' section to explain what a sepal is.  
