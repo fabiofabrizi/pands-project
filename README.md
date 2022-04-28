@@ -27,7 +27,7 @@
 ## About The Project
 
 This is the project for the Programming and Scripting module - Higher Diploma in Data Analytics.
-Fisher's Iris Data set is to be researched, and documentation (my opinions) and code (Python) must be produced.
+Fisher's Iris Data set is to be researched, and documentation (my opinions) and code (Python) must be produced.  
 Fisher's Iris Data set is also known as the *Iris* flower data set and is a multivariate data set introduced by the 
 British statistician and biologist Ronald Fisher in 1936.  
 
@@ -49,14 +49,13 @@ There are three species of Iris in the data set:
 [2] 'Iris Versicolor'  
 [3] 'Iris Virginica'
 
-From reading the many blogs and articles written on Fisher's Iris data set, the common theme amongst all of them is the use of the Python or R languages to analysis and identify any patterns.
+Reviewing the numerous blogs and articles written on Fisher's Iris data set, the common theme is the use of the Python or R languages to analysis and identify any patterns.
 This pattern is also common for other data analysis projects.
-<!--The aim of the project is to use Python to analyse the dataset and identify any patterns within the data, if any.  -->
 
 ## Getting Started
 
 I started by creating the Github repository 'pands-project' and added the dataset to it converted from a data file.
-The script for conversion is included. As I've characterised the dataset, python scripts have been produced that in turn have generated plots of statistical analysis of the dataset.
+The script for conversion is included. As I've characterised the dataset, python scripts have been produced that in turn have generated plots of statistical analysis of the dataset.  
 Explanations of the files in this repository are below.
 
 
