@@ -159,6 +159,8 @@ sns.FacetGrid(df, hue="species", height=5) \
    .add_legend();
 #plt.show()
 """
+
+"""
 #plt.figure(figsize=(10,6))
 def species_histo():
     sns.set(style="darkgrid")
@@ -167,3 +169,22 @@ def species_histo():
     plt.xlabel("Petal Length cm")
     plt.show()
     return
+
+"""
+"""
+sns.countplot(x='species', data=df, palette="husl")
+# Setting title and labels for x and y axes
+plt.title("Iris Species")
+sns.set_theme(style="darkgrid")
+plt.xlabel("Species")
+plt.ylabel("Count")
+plt.show()
+#plt.savefig('Data Visualisation/species-plot.png',  bbox_inches='tight'
+"""
+
+sns.set(style="darkgrid")
+ax =sns.countplot(x = 'species', data=df, palette='husl' )
+ax.set_title('Iris Species',fontsize = 18, fontweight='bold' )
+ax.set_xlabel('Individual Species', fontsize = 15)
+ax.set_ylabel('Species count', fontsize = 15)
+plt.show()

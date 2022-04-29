@@ -49,6 +49,10 @@ There are three species of Iris in the data set:
 [2] 'Iris Versicolor'  
 [3] 'Iris Virginica'
 
+There are 50 samples of each species, as highlighted by the graph below:
+
+<img src="Data Visualisation/species-plot.png" alt="Bar chart of iris species"> 
+
 Reviewing the numerous blogs and articles written on Fisher's Iris data set, the common theme is the use of the Python or R languages to analysis and identify any patterns.
 This pattern is also common for other data analysis projects.
 

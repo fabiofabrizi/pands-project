@@ -19,11 +19,11 @@ df = pd.read_csv("iris2.csv")
 
 # plt.show() is commented out as it was just for testing
 def species():
-    sns.countplot(x='species', data=df, )
-    # Setting title and labels for x and y axes
-    plt.title("Iris Species")
-    plt.xlabel("Species")
-    plt.ylabel("Count")
+    sns.set(style="darkgrid")
+    ax =sns.countplot(x = 'species', data=df, palette='husl' )
+    ax.set_title('Iris Species',fontsize = 18, fontweight='bold' )
+    ax.set_xlabel('Individual Species', fontsize = 15)
+    ax.set_ylabel('Species count', fontsize = 15)
     #plt.show()
     plt.savefig('Data Visualisation/species-plot.png',  bbox_inches='tight')
     return
