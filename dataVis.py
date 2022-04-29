@@ -135,7 +135,7 @@ def pair_plots():
     sns.set(style="darkgrid", palette='husl')
     pp = sns.pairplot(df, hue="species", height = 2)
     #pp.add_legend(title="Relationships between all pairs of variables")
-    pp.fig.suptitle("Relationships between all variables", fontsize = 16, fontweight='bold')
+    pp.fig.suptitle("Relationships between all variables", y=1.025, fontsize = 16, fontweight='bold')
     cn = ['setosa', 'versicolor', 'virginica']
     #sns.pairplot(df, hue="species", height = 2, palette = 'colorblind')
     #plt.show()
