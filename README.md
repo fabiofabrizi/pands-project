@@ -224,7 +224,7 @@ A histogram is different to a bar chart because the bars are connected to each o
 It can be thought of as a picture of the data and in the histograms below:
 - The height of each bar represents the count of each iris (frequency) of that variable
 
-<img src="Data Visualisation/histograms.png" alt="Histograms of variables">  
+<img src="Data Visualisation/histograms.svg" alt="Histograms of variables">  
 
 Sepal length and sepal width seem to have the only normal distributions whereas petal length and petal width seem 
 to have a distribution below the median (known as negatively skewed).  
@@ -234,15 +234,15 @@ to have a distribution below the median (known as negatively skewed).
 
 A box plot is a type of plot that takes data and shows us the minimum, maximum, median and first and third quartiles. The box plot is included below as a way of visually confirming what was seen in analysis.txt.
 
-<img src="Data Visualisation/box_plots.png" alt="Box plots of species">  
+<img src="Data Visualisation/box_plots.svg" alt="Box plots of species">  
 
-From looking at the box plots above, it does indeed confirm what was observed about *'Iris Setosa'* - that is, it has the smallest deviations in petal length and width and the largest variation in sepal width.  
+Analysing the box plots above confirms initial observations about *'Iris Setosa'* - that is, it has the smallest deviations in petal length and width and the largest variation in sepal width.  
 
-What can also be observed from the box plots is that *'Iris Setosa'* and *'Iris Virginica'* are quite seperate to each other in terms of their characteristics - *'Iris Virginica'*, apart from sepal width, has greater variation across all characteristics.
+Analysis of the box plots also shows that *'Iris Setosa'* and *'Iris Virginica'* are quite seperate to each other in terms of their characteristics - *'Iris Virginica'*, apart from sepal width, has greater variation across all characteristics.
 
 For *'Iris Versicolor'* there's an overlap at the top of the range (4.5 - 5.2cm) with *'Iris Virginica'* as confirmed by the box plot.
 
-From examination of the above box plots, it can be inferred that petal length (in cm) is the best variable to distinguish between the species as all the others have overlapping ranges.
+Thus, from examination of the box plots, it can be inferred that *petal length* and *petal width* (in cm) are the best variables to distinguish between the species as all the others have overlapping ranges.
 
 
 
