@@ -21,7 +21,7 @@ df = pd.read_csv("iris2.csv")
 def species():
     sns.set(style="darkgrid")
     ax =sns.countplot(x = 'species', data=df, palette='husl' )
-    ax.set_title('Iris Species',fontsize = 18, fontweight='bold' )
+    ax.set_title('Iris Species',fontsize = 16, fontweight='bold' )
     ax.set_xlabel('Individual Species', fontsize = 15)
     ax.set_ylabel('Species count', fontsize = 15)
     #plt.show()
@@ -38,9 +38,9 @@ def sepal_relation():
                                 'sepal_width',
                                 'sepal_length').add_legend()
     # Setting title and labels for x and y axes                            
-    plt.title("Sepal Length vs Sepal Width of each species")
-    plt.xlabel("Sepal Width cm")
-    plt.ylabel("Sepal Length cm")
+    plt.title("Sepal Length vs Sepal Width of each species", fontsize = 16, fontweight='bold')
+    plt.xlabel("Sepal Width cm", fontsize = 15 )
+    plt.ylabel("Sepal Length cm", fontsize = 15)
     #plt.show()
     plt.savefig('Data Visualisation/sepal_length_width.png',  bbox_inches='tight')
     return
@@ -52,9 +52,9 @@ def petal_relation():
                                 'petal_length',
                                 'petal_width').add_legend()
     # Setting title and labels for x and y axes
-    plt.title("Petal Length vs Petal Width of each species")
-    plt.xlabel("Petal Length cm")
-    plt.ylabel("Petal Width cm")
+    plt.title("Petal Length vs Petal Width of each species", fontsize = 16, fontweight='bold')
+    plt.xlabel("Petal Length cm", fontsize = 15 )
+    plt.ylabel("Petal Width cm", fontsize = 15 )
     #plt.show()
     plt.savefig('Data Visualisation/petal_length_width.png', bbox_inches='tight')
     return
@@ -64,26 +64,28 @@ def petal_relation():
 def petal_sepal_length_relation():
     plt.figure(figsize=(10,6))
     sns.set(style="darkgrid")
+    plt.title("Petal Length vs Sepal Length of each species", fontsize = 16, fontweight='bold')
     sns.color_palette("Paired")
     sns.scatterplot( data= df,
                 x="sepal_length", y="petal_length",
                 hue="species"
-                    ).set(title="Petal Length vs Sepal Length of each species")
-    plt.xlabel("Sepal Length cm")
-    plt.ylabel("Petal Length cm")
+                    )
+    plt.xlabel("Sepal Length cm", fontsize = 15 )
+    plt.ylabel("Petal Length cm", fontsize = 15 )
     plt.savefig('Data Visualisation/petal_sepal_length.png',  bbox_inches='tight')
     return
 
 def petal_sepal_width_relation():
     plt.figure(figsize=(10,6))
     sns.set(style="darkgrid")
+    plt.title("Petal Width vs Sepal Width of each species", fontsize = 16, fontweight='bold')
     sns.color_palette("Paired")
     sns.scatterplot( data= df,
                 x="sepal_width", y="petal_width",
                 hue="species"
-                    ).set(title="Petal Width vs Sepal Width of each species")
-    plt.xlabel("Sepal Width cm")
-    plt.ylabel("Petal Width cm")
+                    )
+    plt.xlabel("Sepal Width cm", fontsize = 15 )
+    plt.ylabel("Petal Width cm", fontsize = 15 )
     #plt.show()
     plt.savefig('Data Visualisation/petal_sepal_width.png',  bbox_inches='tight')
     return
@@ -96,12 +98,11 @@ def pair_plots():
     sns.set(style="darkgrid")
     pp = sns.pairplot(df, hue="species", height = 2, palette = 'colorblind')
     #pp.add_legend(title="Relationships between all pairs of variables")
-    #pp.fig.suptitle("Title", y=1.08)
-    #pp.set_title("Title")
+    pp.fig.suptitle("Relationships between all variables", y=1.08, fontsize = 16, fontweight='bold')
     cn = ['setosa', 'versicolor', 'virginica']
     #sns.pairplot(df, hue="species", height = 2, palette = 'colorblind')
     #plt.show()
-    plt.savefig('Data Visualisation/pair_plots.png')
+    plt.savefig('Data Visualisation/pair_plots.png', bbox_inches='tight')
     return
 
 # Box plots to show the median and the quartiles of each variable.
@@ -109,7 +110,7 @@ def box_plots():
     sns.set(style="darkgrid")
     sns.set_palette("husl")
     fig, axes = plt.subplots(2, 2, figsize=(16,9))
-    fig.suptitle("Box Plots to show the min, max, median and quartiles of each variable")
+    fig.suptitle("Box Plots to show the min, max, median and quartiles of each variable", fontsize = 16, fontweight='bold')
     sns.boxplot( y='petal_width', x= 'species', data=df, orient='v' , ax=axes[0, 0])
     sns.boxplot( y='petal_length', x= 'species', data=df, orient='v' , ax=axes[0, 1])
     sns.boxplot( y='sepal_length', x= 'species', data=df, orient='v' , ax=axes[1, 0])
@@ -125,7 +126,7 @@ def box_plots():
 def box_violin_plots():
     sns.set(style="darkgrid")
     fig, axes = plt.subplots(2, 2, figsize=(16,9))
-    fig.suptitle("Violin Plot & Box Plot to show frequency distribution by species")
+    fig.suptitle("Violin Plot overlaid on Box Plot to show frequency distribution by species", fontsize = 16, fontweight='bold')
     #plt.title("Violin Plot & Box Plot to show frequency distribution")
     sns.set_palette("husl")
     sns.boxplot( y='petal_width', x= 'species', data=df, orient='v' , ax=axes[0, 0] )
@@ -147,7 +148,7 @@ def histo_plots():
     # Below we're specifying an area for 2x2 plots
     sns.set(style="darkgrid")
     fig, axes = plt.subplots(2, 2, figsize=(16, 9))
-    fig.suptitle("Histograms of all the variables")
+    fig.suptitle("Histograms of all the variables", fontsize = 16, fontweight='bold')
     sns.histplot(df.petal_length, color="gold", kde=False, ax=axes[0, 0]).set_xlabel("Petal Length in cm")
     sns.histplot(df.petal_width, color="teal", kde=False, ax=axes[0, 1]).set_xlabel("Petal Width in cm")
     sns.histplot(df.sepal_length, color="skyblue", kde=False, ax=axes[1, 0]).set_xlabel("Sepal Length in cm")
@@ -157,12 +158,13 @@ def histo_plots():
     return
 
 def kde():
+    plt.title("Kernel Density Estimation of petal length", y=1.08)
     sns.set(style="darkgrid")
     sns.color_palette("Paired")
     sns.displot(df, x="petal_length", hue="species", kind="kde" )
     plt.xlabel("Petal Length cm")
     #plt.show()
-    plt.savefig('Data Visualisation/kde.png')
+    plt.savefig('Data Visualisation/kde.png', bbox_inches='tight')
     return    
 
 def species_histo():
@@ -179,14 +181,14 @@ def species_histo():
 # Function calls for testing
 # Commented out because analysis.py is 
 # doing the calling of the functions below.
-#petal_relation() 
-#sepal_relation()
-#species()
-#petal_sepal_length_relation()
-#petal_sepal_width_relation()
-#pair_plots()
-#box_plots()
-#box_violin_plots()
-#histo_plots()
-#kde()
-#species_histo()
+petal_relation() 
+sepal_relation()
+species()
+petal_sepal_length_relation()
+petal_sepal_width_relation()
+pair_plots()
+box_plots()
+box_violin_plots()
+histo_plots()
+kde()
+species_histo()
