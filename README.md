@@ -214,6 +214,9 @@ For *'Iris Versicolor'* there's an overlap at the top of the range (4.5 - 5.2cm)
 From examination of the above box plots, it can be inferred that petal length (in cm) is the best variable to distinguish between the species as all the others have overlapping ranges.
 
 
+
+
+
 **Violin Plots**
 
 Violin plots are used to visualise the frequency distribution of a data set and it's probability density.
@@ -225,7 +228,10 @@ The violin plots are overlaid on top of the box plots to have visual representat
 
 From looking at the above plots it can be observed that:
 - *'Iris Setosa'* has some outliers when it comes to sepal width, potentially be skewing the results.
-- *'Iris Virginica'* has some outliers around sepal length.
+- *'Iris Virginica'* has some outliers around sepal length.  
+
+
+
 
 
 
@@ -264,7 +270,7 @@ Examining the scatterplot above of *Petal Width vs Length* it can be observed:
 - *'Iris Versicolor'* is once again inbetween the two species in terms of petal lengths and widths  
 
 
-**Sepal and Petal Relationships**  
+**Sepal and Petal Relationships: Sepal vs Petal Length and Sepal vs Petal Width**  
 
 
 
@@ -279,6 +285,8 @@ Examining the plots above:
 
 The above two plots indicate to the layperson the smallest and largest species of iris in the dataset.
 At this point, visual representation of statistics have been used to indicate to the reader which variables should be considered in order to identify between the three species.
+
+Examination of the four plots above indicate that *petal length* and *petal width* are the variables to focus on.
 
 **Pair Plots**
 
