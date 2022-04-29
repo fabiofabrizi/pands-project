@@ -248,6 +248,7 @@ def species_histo():
     plt.savefig('Data Visualisation/species_histo.png', bbox_inches='tight')
     return
 """
+"""
 def sepal_petal_relationships():
     # Below we're specifying an area for 2x2 plots
     sns.set(style="darkgrid", palette="husl")
@@ -263,13 +264,17 @@ def sepal_petal_relationships():
     plt.show()
     #plt.savefig('Data Visualisation/histograms.png')
     return
-
-    sns.scatterplot( data= df,
-                x="sepal_length", y="petal_length",
-                hue="species"
-                    )
-    plt.xlabel("Sepal Length cm", fontsize = 15 )
-    plt.ylabel("Petal Length cm", fontsize = 15 )
-    plt.savefig('Data Visualisation/petal_sepal_length.png',  bbox_inches='tight')
-
-sepal_petal_relationships()
+"""
+def combined_sepal_petal_vars():
+    sns.set(style="darkgrid", palette="husl")
+    fig, axes = plt.subplots(1, 2, figsize=(16, 9))
+    fig.suptitle("Sepal Width vs Sepal Length and Petal Width vs Petal Length in cm", fontsize = 16, fontweight='bold')
+    sns.scatterplot( data= df, x="sepal_width",
+                    y="sepal_length", hue="species",
+                    ax=axes[0]
+                    ).set_title("Sepal Width vs Length", fontweight='bold')
+    sns.scatterplot( data= df, x="petal_width", 
+                    y="petal_length", hue="species", 
+                    ax=axes[1]).set_title("Petal Width vs Length", fontweight='bold')
+    plt.show()
+    return

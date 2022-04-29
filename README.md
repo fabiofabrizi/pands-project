@@ -228,6 +228,8 @@ From looking at the above plots it can be observed that:
 - *'Iris Virginica'* has some outliers around sepal length.
 
 
+
+
 **Histograms**
 
 A histogram is a type of plot that visualises the frequency distribution (also known as shape) of a set of data.
@@ -242,25 +244,21 @@ to have a distribution below the median (known as negatively skewed).
 
 
 
-**Sepal and Petal Relationships**
+
+**Sepal and Petal Relationships: Sepal Width vs Length and Petal Width vs Length**
+
+
+<img src="Data Visualisation/combined_sepal_petal_relationships.svg" alt="Sepal length and width">
 
 
 
-
-**Sepal Relationship**
-
-<img src="Data Visualisation/sepal_length_width.png" alt="Sepal length and width">
-
-Examining the scatterplot above of *sepal length vs width* (sepal_length_width.png) it can be observed:  
+Examining the scatterplot above of *Sepal Width vs Length* it can be observed:  
 - *'Iris Setosa'* has larger sepal widths but smaller sepal lengths
 - *'Iris Virginica'* has larger sepal lengths but smaller sepal widths
 - *'Iris Versicolor'* is somewhere inbetween the two species in terms of sepal length and width.
 
-**Petal Relationship**
 
-<img src="Data Visualisation/petal_length_width.png" alt="Petal length and width">
-
-Examining the scatterplot above of *petal length vs width* (petal_length_width.png) it can be observed:  
+Examining the scatterplot above of *Petal Width vs Length* it can be observed:  
 - *'Iris Setosa'* has smaller petal lengths and widths than the other two species  
 - *'Iris Virginica'* has the largest petal lengths and widths of all three species  
 - *'Iris Versicolor'* is once again inbetween the two species in terms of petal lengths and widths  

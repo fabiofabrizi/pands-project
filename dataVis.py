@@ -95,6 +95,22 @@ def petal_sepal_width_relation():
     plt.savefig('Data Visualisation/petal_sepal_width.svg',  bbox_inches='tight')
     return
 
+def combined_sepal_petal_vars():
+    sns.set(style="darkgrid", palette="husl")
+    fig, axes = plt.subplots(1, 2, figsize=(16, 9))
+    fig.suptitle("Sepal Width vs Sepal Length and Petal Width vs Petal Length in cm", fontsize = 16, fontweight='bold')
+    sns.scatterplot( data= df, x="sepal_width",
+                    y="sepal_length", hue="species",
+                    ax=axes[0]
+                    ).set_title("Sepal Width vs Length", fontweight='bold')
+    sns.scatterplot( data= df, x="petal_width", 
+                    y="petal_length", hue="species", 
+                    ax=axes[1]).set_title("Petal Width vs Length", fontweight='bold')
+    #plt.show()
+    plt.savefig('Data Visualisation/combined_sepal_petal_relationships.png')
+    plt.savefig('Data Visualisation/combined_sepal_petal_relationships.svg')
+    return
+
 def sepal_petal_relationships():
     # Below we're specifying an area for 2x1 plots
     # i.e grid of x = 2 and y = 1
@@ -225,6 +241,7 @@ species()
 petal_sepal_length_relation()
 petal_sepal_width_relation()
 sepal_petal_relationships()
+combined_sepal_petal_vars()
 pair_plots()
 box_plots()
 box_violin_plots()

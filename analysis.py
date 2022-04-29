@@ -41,6 +41,11 @@ petal_relation()
 sepal_relation()
 petal_sepal_length_relation()
 petal_sepal_width_relation()
+#Below is looking at the sepal width vs length and Petal width vs length
+combined_sepal_petal_vars()
+# Below is looking at sepal v petal length an sepal vs petal width
+sepal_petal_relationships()
+
 
 # This is pair plot of the sepal length/width and petal length/width
 # If you only had to look at one plot, look at this one as you can see the correlation 
