@@ -39,7 +39,7 @@ The term *Multivariate* means that multiple variables are in the data set:
 
 All the variables are measured in centimetres (cm).
 
-A sepal is the part of a flower that function as protection from a flower in bud, and often as support for the petals when in bloom.
+A sepal is the part of a flower that functions as protection for a flower in bud, and often as support for the petals when in bloom.
 
 <img src="images/640px-sepal.svg.png" alt="Sepal Explanation" >
 

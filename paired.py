@@ -265,6 +265,7 @@ def sepal_petal_relationships():
     #plt.savefig('Data Visualisation/histograms.png')
     return
 """
+"""
 def combined_sepal_petal_vars():
     sns.set(style="darkgrid", palette="husl")
     fig, axes = plt.subplots(1, 2, figsize=(16, 9))
@@ -278,3 +279,10 @@ def combined_sepal_petal_vars():
                     ax=axes[1]).set_title("Petal Width vs Length", fontweight='bold')
     plt.show()
     return
+"""
+sns.set(style="darkgrid", palette='husl')
+sp = sns.countplot(x = 'species', data=df)
+sp.set_title('Iris Species',fontsize = 16, fontweight='bold' )
+#sp.set_xlabel('Individual Species', fontsize = 15)
+#sp.set_ylabel('Species count', fontsize = 15)
+plt.show()

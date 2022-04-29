@@ -19,8 +19,10 @@ df = pd.read_csv("iris2.csv")
 
 # plt.show() is commented out as it was just for testing
 def species():
-    sns.set(style="darkgrid")
-    sp = sns.countplot(x = 'species', data=df, palette='husl' )
+    # Put palette in set method as it wasn't picking up as part of countplot 
+    # but wasn't throwing an error
+    sns.set(style="darkgrid", palette='husl')
+    sp = sns.countplot(x = 'species', data=df)
     sp.set_title('Iris Species',fontsize = 16, fontweight='bold' )
     sp.set_xlabel('Individual Species', fontsize = 15)
     sp.set_ylabel('Species count', fontsize = 15)
@@ -146,7 +148,7 @@ def pair_plots():
 # Box plots to show the median and the quartiles of each variable.
 def box_plots():
     sns.set(style="darkgrid")
-    sns.set_palette("husl")
+    #sns.set_palette("husl")
     fig, axes = plt.subplots(2, 2, figsize=(16,9))
     fig.suptitle("Box Plots to show the min, max, median and quartiles of each variable", fontsize = 16, fontweight='bold')
     sns.boxplot( y='petal_width', x= 'species', data=df, orient='v' , ax=axes[0, 0])
