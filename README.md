@@ -396,6 +396,10 @@ Visually representing the statistical analysis allows the layperson to infer cha
 
 From analysis of the variables, *petal length* and *petal width* were identified as being able to identify between the three iris species with an acceptable degree of error.
 
+The methodology applied to the analysis of this dataset can also be applied to other datasets.
+<br>
+<br>
+<br>
 
 ## References
 
