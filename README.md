@@ -238,7 +238,12 @@ It can be thought of as a picture of the data and in the histograms below:
 <img src="Data Visualisation/histograms.png" alt="Histograms of variables">  
 
 Sepal length and sepal width seem to have the only normal distributions whereas petal length and petal width seem 
-to have a distribution below the median (known as negatively skewed).
+to have a distribution below the median (known as negatively skewed).  
+
+
+
+**Sepal and Petal Relationships**
+
 
 
 
@@ -263,14 +268,13 @@ Examining the scatterplot above of *petal length vs width* (petal_length_width.p
 
 **Sepal and Petal Relationships**  
 
-<img src="Data Visualisation/petal_sepal_length.png" alt="Petal and Sepal length">
 
 
-<img src="Data Visualisation/petal_sepal_width.png" alt="Petal and Sepal width">
+<img src="Data Visualisation/sepal_petal_relationships.svg" alt="Relationships between sepals and petals">
 
 
 Examining the plots above: 
-*petal vs sepal length* (petal_sepal_length.png) and *petal vs sepal width* (petal_sepal_width.png)
+*sepal vs petal length* and *sepal vs petal width*
 - *'Iris Setosa'* is the smallest of the three species 
 - *'Iris Virginica'* is the largest
 - *'Iris Versicolor'* is inbetween the two in terms of size.  

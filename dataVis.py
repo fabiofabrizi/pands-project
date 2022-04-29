@@ -100,14 +100,14 @@ def sepal_petal_relationships():
     # i.e grid of x = 2 and y = 1
     sns.set(style="darkgrid", palette="husl")
     fig, axes = plt.subplots(1, 2, figsize=(16, 9))
-    fig.suptitle("Petal vs Sepal Length and Petal vs Sepal Width", fontsize = 16, fontweight='bold')
+    fig.suptitle("Sepal length vs Petal Length and Sepal width vs Petal width", fontsize = 16, fontweight='bold')
     sns.scatterplot( data= df, x="sepal_length",
                     y="petal_length", hue="species",
                     ax=axes[0]
-                    ).set_title("Petal vs Sepal Length", fontweight='bold')
+                    ).set_title("Sepal Length vs Petal Length in cm ", fontweight='bold')
     sns.scatterplot( data= df, x="sepal_width", 
                     y="petal_width", hue="species", 
-                    ax=axes[1]).set_title("Petal vs Sepal Width", fontweight='bold')
+                    ax=axes[1]).set_title("Sepal Width vs Petal Width in cm", fontweight='bold')
     #plt.show()
     plt.savefig('Data Visualisation/sepal_petal_relationships.png')
     plt.savefig('Data Visualisation/sepal_petal_relationships.svg')
