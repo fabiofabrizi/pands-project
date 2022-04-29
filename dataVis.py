@@ -26,6 +26,7 @@ def species():
     sp.set_ylabel('Species count', fontsize = 15)
     #plt.show()
     plt.savefig('Data Visualisation/species-plot.png',  bbox_inches='tight')
+    plt.savefig('Data Visualisation/species-plot.svg',  bbox_inches='tight')
     return
 
 # Now lets look at sepal length and sepal width
@@ -43,6 +44,7 @@ def sepal_relation():
     plt.xlabel("Sepal Width cm", fontsize = 15 )
     plt.ylabel("Sepal Length cm", fontsize = 15)
     plt.savefig('Data Visualisation/sepal_length_width.png',  bbox_inches='tight')
+    plt.savefig('Data Visualisation/sepal_length_width.svg',  bbox_inches='tight')
     return
 
 
@@ -58,6 +60,7 @@ def petal_relation():
     plt.ylabel("Petal Width cm", fontsize = 15 )
     #plt.show()
     plt.savefig('Data Visualisation/petal_length_width.png', bbox_inches='tight')
+    plt.savefig('Data Visualisation/petal_length_width.svg', bbox_inches='tight')
     return
 
 # Petal Length and Sepal Length across the three species:
@@ -74,6 +77,7 @@ def petal_sepal_length_relation():
     plt.xlabel("Sepal Length cm", fontsize = 15 )
     plt.ylabel("Petal Length cm", fontsize = 15 )
     plt.savefig('Data Visualisation/petal_sepal_length.png',  bbox_inches='tight')
+    plt.savefig('Data Visualisation/petal_sepal_length.svg',  bbox_inches='tight')
     return
 
 def petal_sepal_width_relation():
@@ -88,6 +92,7 @@ def petal_sepal_width_relation():
     plt.ylabel("Petal Width cm", fontsize = 15 )
     #plt.show()
     plt.savefig('Data Visualisation/petal_sepal_width.png',  bbox_inches='tight')
+    plt.savefig('Data Visualisation/petal_sepal_width.svg',  bbox_inches='tight')
     return
 
 def sepal_petal_relationships():
@@ -119,6 +124,7 @@ def pair_plots():
     #sns.pairplot(df, hue="species", height = 2, palette = 'colorblind')
     #plt.show()
     plt.savefig('Data Visualisation/pair_plots.png', bbox_inches='tight')
+    plt.savefig('Data Visualisation/pair_plots.svg', bbox_inches='tight')
     return
 
 # Box plots to show the median and the quartiles of each variable.
@@ -133,6 +139,7 @@ def box_plots():
     sns.boxplot( y='sepal_width', x= 'species', data=df, orient='v' , ax=axes[1, 1])
     #plt.show()
     plt.savefig('Data Visualisation/box_plots.png')
+    plt.savefig('Data Visualisation/box_plots.svg')
     return
 
 
@@ -155,6 +162,7 @@ def box_violin_plots():
     sns.violinplot(y='sepal_width', x= 'species', data=df, orient='v' , ax=axes[1, 1] )
     #plt.show()
     plt.savefig('Data Visualisation/box_violin_plots.png')
+    plt.savefig('Data Visualisation/box_violin_plots.svg')
     return
 
 # Histogram testing
@@ -171,6 +179,7 @@ def histo_plots():
     sns.histplot(df.sepal_width, color="olive", kde=False, ax=axes[1, 1]).set_xlabel("Sepal Width in cm")
     #plt.show()
     plt.savefig('Data Visualisation/histograms.png')
+    plt.savefig('Data Visualisation/histograms.svg')
     return
 
 def kde():
@@ -181,6 +190,7 @@ def kde():
     plt.xlabel("Petal Length cm")
     #plt.show()
     plt.savefig('Data Visualisation/kde.png', bbox_inches='tight')
+    plt.savefig('Data Visualisation/kde.svg', bbox_inches='tight')
     return    
 
 def species_histo():
@@ -190,6 +200,7 @@ def species_histo():
     plt.xlabel("Petal Length cm")
     #plt.show()
     plt.savefig('Data Visualisation/species_histo.png', bbox_inches='tight')
+    plt.savefig('Data Visualisation/species_histo.svg', bbox_inches='tight')
     return
 
 def kde_species_histo():
