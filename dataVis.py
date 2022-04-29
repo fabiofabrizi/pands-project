@@ -147,11 +147,11 @@ def box_plots():
 # and how that might affect the numbers that we see.
 
 def box_violin_plots():
-    sns.set(style="darkgrid")
+    sns.set(style="darkgrid", palette='husl')
     fig, axes = plt.subplots(2, 2, figsize=(16,9))
     fig.suptitle("Violin Plot overlaid on Box Plot to show frequency distribution by species", fontsize = 16, fontweight='bold')
     #plt.title("Violin Plot & Box Plot to show frequency distribution")
-    sns.set_palette("husl")
+    #sns.set_palette("husl")
     sns.boxplot( y='petal_width', x= 'species', data=df, orient='v' , ax=axes[0, 0] )
     sns.violinplot( y='petal_width', x= 'species', data=df, orient='v' , ax=axes[0, 0] )
     sns.boxplot( y='petal_length', x= 'species', data=df, orient='v' , ax=axes[0, 1] )
@@ -218,7 +218,7 @@ def kde_species_histo():
 # Function calls for testing
 # Commented out because analysis.py is 
 # doing the calling of the functions below.
-#"""
+"""
 petal_relation() 
 sepal_relation()
 species()
@@ -232,4 +232,4 @@ histo_plots()
 kde()
 species_histo()
 kde_species_histo()
-#"""
+"""
