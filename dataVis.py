@@ -33,15 +33,15 @@ def species():
 
 def sepal_relation():
     
-    sns.FacetGrid(df, hue="species",
-                height = 8).map(plt.scatter,
-                                'sepal_width',
-                                'sepal_length').add_legend()
+    sns.set(style="darkgrid")
+    sns.FacetGrid(df, hue="species", palette='husl',
+                    height = 6).map(plt.scatter,
+                                    'sepal_width',
+                                    'sepal_length').add_legend()
     # Setting title and labels for x and y axes                            
     plt.title("Sepal Length vs Sepal Width of each species", fontsize = 16, fontweight='bold')
     plt.xlabel("Sepal Width cm", fontsize = 15 )
     plt.ylabel("Sepal Length cm", fontsize = 15)
-    #plt.show()
     plt.savefig('Data Visualisation/sepal_length_width.png',  bbox_inches='tight')
     return
 

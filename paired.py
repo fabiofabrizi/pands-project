@@ -181,10 +181,22 @@ plt.ylabel("Count")
 plt.show()
 #plt.savefig('Data Visualisation/species-plot.png',  bbox_inches='tight'
 """
-
+"""
 sns.set(style="darkgrid")
 ax =sns.countplot(x = 'species', data=df, palette='husl' )
 ax.set_title('Iris Species',fontsize = 18, fontweight='bold' )
 ax.set_xlabel('Individual Species', fontsize = 15)
 ax.set_ylabel('Species count', fontsize = 15)
+plt.show()
+"""
+
+sns.set(style="darkgrid")
+sns.FacetGrid(df, hue="species", palette='husl',
+                height = 6).map(plt.scatter,
+                                'sepal_width',
+                                'sepal_length').add_legend()
+# Setting title and labels for x and y axes                            
+plt.title("Sepal Length vs Sepal Width of each species", fontsize = 16, fontweight='bold')
+plt.xlabel("Sepal Width cm", fontsize = 15 )
+plt.ylabel("Sepal Length cm", fontsize = 15)
 plt.show()
