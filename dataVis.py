@@ -182,6 +182,7 @@ def species_histo():
 # Function calls for testing
 # Commented out because analysis.py is 
 # doing the calling of the functions below.
+"""
 petal_relation() 
 sepal_relation()
 species()
@@ -193,3 +194,4 @@ box_violin_plots()
 histo_plots()
 kde()
 species_histo()
+"""
