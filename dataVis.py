@@ -95,8 +95,8 @@ def petal_sepal_width_relation():
 # Now Let's look at the attributes using a scatterplot within seaborn
 def pair_plots():
     # Set title below
-    sns.set(style="darkgrid")
-    pp = sns.pairplot(df, hue="species", height = 2, palette = 'colorblind')
+    sns.set(style="darkgrid", palette='husl')
+    pp = sns.pairplot(df, hue="species", height = 2)
     #pp.add_legend(title="Relationships between all pairs of variables")
     pp.fig.suptitle("Relationships between all variables", y=1.08, fontsize = 16, fontweight='bold')
     cn = ['setosa', 'versicolor', 'virginica']
