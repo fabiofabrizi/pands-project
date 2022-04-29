@@ -334,8 +334,6 @@ The *petal length* and *petal width* variables can be examined in more detail by
 <br>
 <br>
 
-**Kernel Density Estimation overlaid on histograms of each individual species**  
-<br>
 
 <img src="Data Visualisation/kde_species_histo.svg" alt="Histogram of each iris species"> 
 
@@ -366,7 +364,8 @@ Examining the samples of 'Iris Verisicolor' and 'Iris Virginica' above and below
 - *'Iris Versicolor'* would have an estimation error of 4% (2/50 x 100) as 2 samples are over 1.7cm.
 - *'Iris Virginica'* would have an estimation error of 10% (5/50 x 100) as 5 samples are less than  1.7cm.  
 
-Note that these errors would only occur for petal width measurements between 1.4 and 1.8 respectively as above or below these values there would be no errors distinguishing between the three species.
+Note that these errors would only occur for *petal width* measurements between 1.4 and 1.8 respectively as above or below these values there would be no errors distinguishing between the three species.
+Also note that in real life, measurement error would have to be taken into consideration because the botanist/researcher/etc would be measuring the petal width in millimetres (mm).
 
 As a result of the analysis above a formula can be reached with regarding to categorising the three species based on *petal width*:  
 [1] If 0.1 > 'petal width' < 0.6 then the iris species is *'Iris Setosa'* 
@@ -380,21 +379,22 @@ As a result of the analysis above a formula can be reached with regarding to cat
 *Petal length* and *petal width* are the best variables to distinguish between the three species as confirmed by   
 [i] Box plots  
 [ii] Scatter plots  
-[iii] Pair plots 
+[iii] Pair plots  
 [iv] Histograms
-
-
-Therefore *'Iris Setosa'* is the only species that can clearly (visually) be separated from the other two by using statistics, from looking at analysis.txt we could see that at the very start (by the statistics for each species at the end of the file).
 
 The four plots listed above are the ones that I would have in my presentation to colleagues, with possibly the addition of the violin plot overlaid on the box plot to identify any outliers.  
 
-The dataset was initially collected to learn more about the three Iris species - whether as part of taxonomy of the species and/or for research.
+- *'Iris Setosa'* could be seperated from the other species by looking at the basic statistics in *analysis.txt* (it's the smallest)
+- *'Iris Setosa'* is the only species that can clearly (visually) be separated from the other two species by *petal length* and *petal width*.
+
+
+The dataset was first collected to learn more about the three Iris species - whether as part of taxonomy of the species and/or for research.
 
 Python was used along with libraries like matplotlib, numpy and seaborn to learn more about the variables in the data set and the relationship(s) between each other.  
 
 Visually representing the statistical analysis allows the layperson to infer characteristics of the data without being a statistics expert.
 
-From analysis of the variables, *petal length* was identified as being able to identify between the three iris species.
+From analysis of the variables, *petal length* and *petal width* were identified as being able to identify between the three iris species with an acceptable degree of error.
 
 
 ## References
