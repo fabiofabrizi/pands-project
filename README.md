@@ -230,11 +230,9 @@ From looking at the above plots it can be observed that:
 - *'Iris Setosa'* has some outliers when it comes to sepal width, potentially be skewing the results.
 - *'Iris Virginica'* has some outliers around sepal length.  
 
-
-
-
-
-
+<br>
+<br>
+<br>
 
 **Histograms**
 
@@ -286,7 +284,10 @@ Examining the plots above:
 The above two plots indicate to the layperson the smallest and largest species of iris in the dataset.
 At this point, visual representation of statistics have been used to indicate to the reader which variables should be considered in order to identify between the three species.
 
-Examination of the four plots above indicate that *petal length* and *petal width* are the variables to focus on.
+Examination of the four plots above indicate that *petal length* and *petal width* are the variables to focus on.  
+
+
+
 
 **Pair Plots**
 
