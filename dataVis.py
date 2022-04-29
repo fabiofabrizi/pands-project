@@ -64,9 +64,9 @@ def petal_relation():
     
 def petal_sepal_length_relation():
     plt.figure(figsize=(10,6))
-    sns.set(style="darkgrid")
+    sns.set(style="darkgrid", palette='husl')
     plt.title("Petal Length vs Sepal Length of each species", fontsize = 16, fontweight='bold')
-    sns.color_palette("Paired")
+    #sns.color_palette("Paired")
     sns.scatterplot( data= df,
                 x="sepal_length", y="petal_length",
                 hue="species"
@@ -78,9 +78,8 @@ def petal_sepal_length_relation():
 
 def petal_sepal_width_relation():
     plt.figure(figsize=(10,6))
-    sns.set(style="darkgrid")
+    sns.set(style="darkgrid", palette='husl')
     plt.title("Petal Width vs Sepal Width of each species", fontsize = 16, fontweight='bold')
-    sns.color_palette("Paired")
     sns.scatterplot( data= df,
                 x="sepal_width", y="petal_width",
                 hue="species"
@@ -182,7 +181,7 @@ def species_histo():
 # Function calls for testing
 # Commented out because analysis.py is 
 # doing the calling of the functions below.
-"""
+#"""
 petal_relation() 
 sepal_relation()
 species()
@@ -194,4 +193,4 @@ box_violin_plots()
 histo_plots()
 kde()
 species_histo()
-"""
+#"""
