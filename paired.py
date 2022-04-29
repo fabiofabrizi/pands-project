@@ -189,7 +189,7 @@ ax.set_xlabel('Individual Species', fontsize = 15)
 ax.set_ylabel('Species count', fontsize = 15)
 plt.show()
 """
-
+"""
 sns.set(style="darkgrid")
 sns.FacetGrid(df, hue="species", palette='husl',
                 height = 6).map(plt.scatter,
@@ -200,3 +200,47 @@ plt.title("Sepal Length vs Sepal Width of each species", fontsize = 16, fontweig
 plt.xlabel("Sepal Width cm", fontsize = 15 )
 plt.ylabel("Sepal Length cm", fontsize = 15)
 plt.show()
+"""
+"""
+def histo_plots():
+    # Below we're specifying an area for 2x2 plots
+    sns.set(style="darkgrid")
+    fig, axes = plt.subplots(2, 2, figsize=(16, 9))
+    fig.suptitle("Histograms of all the variables", fontsize = 16, fontweight='bold')
+    sns.histplot(df.petal_length, color="gold", kde=False, ax=axes[0, 0]).set_xlabel("Petal Length in cm")
+    sns.histplot(df.petal_width, color="teal", kde=False, ax=axes[0, 1]).set_xlabel("Petal Width in cm")
+    sns.histplot(df.sepal_length, color="skyblue", kde=False, ax=axes[1, 0]).set_xlabel("Sepal Length in cm")
+    sns.histplot(df.sepal_width, color="olive", kde=False, ax=axes[1, 1]).set_xlabel("Sepal Width in cm")
+    #plt.show()
+    plt.savefig('Data Visualisation/histograms.png')
+    return
+"""
+def kde_species_histo():
+    sns.set(style="darkgrid", palette="husl")
+    fig, axes = plt.subplots(1, 2, figsize=(16, 9))
+    fig.suptitle(" Kernel Density Estimation overlaid on Histograms \nof all species by the petal length and petal width variables", fontsize = 16, fontweight='bold')
+    sns.histplot(df, x="petal_length", ax=axes[0], hue="species", bins=30, kde="True").set_xlabel("Petal length in cm", fontsize = 15)
+    sns.histplot(df, x="petal_width", ax=axes[1], hue="species", bins=30, kde="True").set_xlabel("Petal width in cm", fontsize = 15)
+    plt.show()
+    return
+"""
+def kde():
+    plt.title("Kernel Density Estimation of petal length", y=1.08)
+    sns.set(style="darkgrid")
+    sns.color_palette("Paired")
+    sns.displot(df, x="petal_length", hue="species", kind="kde" )
+    plt.xlabel("Petal Length cm")
+    #plt.show()
+    plt.savefig('Data Visualisation/kde.png', bbox_inches='tight')
+    return    
+
+def species_histo():
+    sns.set(style="darkgrid")
+    sns.color_palette("colorblind")
+    sns.histplot(df, x="petal_length", hue="species", bins=30 ).set(title="Histograms of each species")
+    plt.xlabel("Petal Length cm")
+    #plt.show()
+    plt.savefig('Data Visualisation/species_histo.png', bbox_inches='tight')
+    return
+"""
+kde_species_histo()

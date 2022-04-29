@@ -47,8 +47,9 @@ def sepal_relation():
 
 
 def petal_relation():
-    sns.FacetGrid(df, hue="species",
-                height = 8).map(plt.scatter,
+    sns.set(style="darkgrid")
+    sns.FacetGrid(df, hue="species", palette='husl',
+                height = 6).map(plt.scatter,
                                 'petal_length',
                                 'petal_width').add_legend()
     # Setting title and labels for x and y axes
