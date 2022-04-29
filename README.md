@@ -12,8 +12,8 @@
 <!-- TABLE OF CONTENTS -->
 # Table of Contents
 1. **[About The Project]("#about-the-project")**
-2. **[Getting Started](#getting-Started)**
-3. **[Aims](#aims)**
+2. **[Aims](#aims)**
+3. **[Getting Started](#getting-Started)**
 4. **[Research](#research)**
 5. **[Methodology](#methodology)**
 6. **[Files](#files)**
@@ -27,11 +27,11 @@
 ## About The Project
 
 This is the project for the Programming and Scripting module - Higher Diploma in Data Analytics.
-Fisher's Iris Data set is to be researched, and documentation (my opinions) and code (Python) must be produced.  
-Fisher's Iris Data set is also known as the *Iris* flower data set and is a multivariate data set introduced by the 
+Fisher's Iris Dataset is to be researched, and documentation (my opinions) and code (Python) must be produced.  
+Fisher's Iris Dataset is also known as the *Iris* flower dataset and is a multivariate data set introduced by the 
 British statistician and biologist Ronald Fisher in 1936.  
 
-The term *Multivariate* means that multiple variables are in the data set:  
+The term *Multivariate* means that multiple variables are in the dataset:  
 [1] sepal length  
 [2] sepal width  
 [3] petal length   
@@ -52,30 +52,40 @@ There are three species of Iris in the data set:
 There are 50 samples of each species, as highlighted by the graph below:
 
 <img src="Data Visualisation/species-plot.png" alt="Bar chart of iris species"> 
+<br>  
+<br>
+Reviewing the numerous blogs and articles written on Fisher's Iris dataset, the common theme is the use of the Python or R languages to analysis and identify any patterns.
+This pattern is also common for other data analysis/visualisation projects.  
 
-Reviewing the numerous blogs and articles written on Fisher's Iris data set, the common theme is the use of the Python or R languages to analysis and identify any patterns.
-This pattern is also common for other data analysis projects.
+<br>  
+<br>  
 
-## Getting Started
-
-I started by creating the Github repository 'pands-project' and added the dataset to it converted from a data file.
-The script for conversion is included. As I've characterised the dataset, python scripts have been produced that in turn have generated plots of statistical analysis of the dataset.  
-Explanations of the files in this repository are below.
-
-
-
-## Aims
+## Aims 
 
 The task, is to take the dataset and:  
 1) Learn why the data is collected in the first place
 2) Use Python to learn about the variables within the dataset
 3) Explain to others how to identify what type of Iris they have.
 
+<br>  
+<br>  
+
+
+## Getting Started
+
+I started by creating the Github repository 'pands-project' and added the dataset to it converted from a data file.
+The script for conversion is included. 
+The dataset has been characterised with python scripts and the use of statistical analysis in order to produce plots of the variables.   
+It has been done in this way so that I might infer what variables are responsible for identifying the species and distinguishing them from one another.
+  
+Explanations of the files in this repository are below.
+<br>  
+<br>
 
 
 ## Research
 
-[1] The Mother
+**[1] The Mother**
 
 I have no background in horticulture - the furthest my expertise extends to is mowing the grass and a small herb garden.
 However, my mother is a keen gardener, she told me about a scenario that occurs fairly often with her:
@@ -86,16 +96,21 @@ However, my mother is a keen gardener, she told me about a scenario that occurs 
 
 So there's a *real-life example* of a data set point being checked against a data set (or many) in order to produce an answer. 
 
-[2] The internet - specific links are inluded in the python files and/or in the 'References' section below.  
-When one googles 'Iris data set' there's lots of results - Too many for me to examine every single one.
+**[2] The internet**  
+
+ 
+When one googles 'Iris dataset' there's lots of results - Too many for me to examine every single one.
 
 Some have approached the problem from a Machine Learning angle and have applied appropriate libraries in order to develop models, etc so that when a data set of iris species are plugged in, the model can tell you which one it is.
 
 Some have plotted every single histogram/pie chart/scatter plot/etc known to man. 
 
-I have taken neither approach, instead focusing on whether I can find out enough about the three Iris species to explain the differences to colleagues at work and the **minimum most important statistical analysis** that needs to be done in order to do this. The reason for me doing so is that everyone is under time constraints, so they have the option of hearing more (digging deeper into the statistics) or ending the meeting because they feel they know enough.
+I have taken neither approach, instead focusing on whether I can find out enough about the three Iris species to explain the differences to colleagues at work and the **minimum most important statistical analysis** that needs to be done in order to do this.   
+The reason for me doing so is being aware of time constraints and the fact that my audience might only have two or three minutes to listen to me.
 
-
+Other relevant links are inluded in the python files and/or in the 'References' section below. 
+<br>  
+<br>
 
 ## Methodology
 
@@ -105,7 +120,7 @@ i) Get the dataset
 ii) Check the dataset for null values and remove them  
 iii) Characterise the dataset and associated data - ie How many rows/columns, mean/max/min values etc  
 iv) Apply some statistical analysis to get a visual representation of the data  
-v) Examine the visual representation - Does it show a pattern or something unique that I can use to understand the data set.  
+v) Examine the visual representation - Does it show a pattern or something unique that I can use to understand the data set  
 
 From the process above, one can take a data set and apply the above steps to look for any unique patterns in the data.
 
