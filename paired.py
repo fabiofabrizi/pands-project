@@ -84,7 +84,7 @@ sns.scatterplot(x='sepal_length', y='sepal_width',
     plt.show()
     #plt.savefig('Data Visualisation/sepal_length_width.png')
 """
-
+"""
 def petal_sepal_width_relation():
     sns.FacetGrid(df, hue="species",
                 height = 8).map(plt.scatter,
@@ -99,7 +99,8 @@ def petal_sepal_width_relation():
     return
 
 #petal_sepal_width_relation()
-
+"""
+"""
 def histo_plots():
     # Below we're specifying an area for 2x2 plots
     sns.set(style="darkgrid")
@@ -112,6 +113,7 @@ def histo_plots():
     #plt.show()
     plt.savefig('Data Visualisation/histograms.png')
     return
+"""
 """
 plt.figure(figsize=(16,9))
 sns.set(style="darkgrid")
@@ -215,6 +217,8 @@ def histo_plots():
     plt.savefig('Data Visualisation/histograms.png')
     return
 """
+
+"""
 def kde_species_histo():
     sns.set(style="darkgrid", palette="husl")
     fig, axes = plt.subplots(1, 2, figsize=(16, 9))
@@ -223,6 +227,7 @@ def kde_species_histo():
     sns.histplot(df, x="petal_width", ax=axes[1], hue="species", bins=30, kde="True").set_xlabel("Petal width in cm", fontsize = 15)
     plt.show()
     return
+"""
 """
 def kde():
     plt.title("Kernel Density Estimation of petal length", y=1.08)
@@ -243,4 +248,28 @@ def species_histo():
     plt.savefig('Data Visualisation/species_histo.png', bbox_inches='tight')
     return
 """
-kde_species_histo()
+def sepal_petal_relationships():
+    # Below we're specifying an area for 2x2 plots
+    sns.set(style="darkgrid", palette="husl")
+    fig, axes = plt.subplots(1, 2, figsize=(16, 9))
+    fig.suptitle("Petal vs Sepal Length and Petal vs Sepal Width", fontsize = 16, fontweight='bold')
+    sns.scatterplot( data= df, x="sepal_length",
+                    y="petal_length", hue="species",
+                    ax=axes[0]
+                    ).set_title("Petal vs Sepal Length", fontweight='bold')
+    sns.scatterplot( data= df, x="sepal_width", 
+                    y="petal_width", hue="species", 
+                    ax=axes[1]).set_title("Petal vs Sepal Width", fontweight='bold')
+    plt.show()
+    #plt.savefig('Data Visualisation/histograms.png')
+    return
+
+    sns.scatterplot( data= df,
+                x="sepal_length", y="petal_length",
+                hue="species"
+                    )
+    plt.xlabel("Sepal Length cm", fontsize = 15 )
+    plt.ylabel("Petal Length cm", fontsize = 15 )
+    plt.savefig('Data Visualisation/petal_sepal_length.png',  bbox_inches='tight')
+
+sepal_petal_relationships()

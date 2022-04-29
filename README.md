@@ -299,13 +299,12 @@ Examining the *petal length* and *petal width* variables in more detail, *petal 
 
 The *petal length* variable can be examined in more detail by plotting *Kernel Density Estimation* - which is a way to estimate the probability function of a variable.
 
-<img src="Data Visualisation/kde.png" alt="Kernel Density Estimation">
 
 Considering the two species *'Iris Versicolor'* and *'Iris Virginica'*, at 4.8cm there's a cross-over between the two species.
 
 Finally, examining the histogram of each individual species:
 
-<img src="Data Visualisation/species_histo.png" alt="Histogram of each iris species">  
+<img src="Data Visualisation/kde_species_histo.svg" alt="Histogram of each iris species"> 
 
 Examining the samples of 'Iris Verisicolor' and 'Iris Virginica' above and below the 4.8cm mark respectively:
 - *'Iris Versicolor'* would have an estimation error of 12% (6/50 x 100) as 6 samples are over 4.8cm
@@ -357,4 +356,5 @@ From analysis of the variables, *petal length* was identified as being able to i
 **[Statistics by Jim](https://statisticsbyjim.com/basics/percentiles/#:~:text=Percentiles%20indicate%20the%20percentage%20of,91%20percent%20of%20other%20scores.)**  
 **[What is a Sepal?](https://en.wikipedia.org/wiki/Sepal)**  
 **[Markdown guide](https://www.markdownguide.org/basic-syntax/)**  
-**[Limitations of sns.pairplot for large datasets](https://www.kaggle.com/questions-and-answers/182729)**
+**[Limitations of sns.pairplot for large datasets](https://www.kaggle.com/questions-and-answers/182729)**  
+**[Seaborn Cheat Sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Seaborn_Cheat_Sheet.pdf)**

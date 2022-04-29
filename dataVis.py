@@ -20,10 +20,10 @@ df = pd.read_csv("iris2.csv")
 # plt.show() is commented out as it was just for testing
 def species():
     sns.set(style="darkgrid")
-    ax =sns.countplot(x = 'species', data=df, palette='husl' )
-    ax.set_title('Iris Species',fontsize = 16, fontweight='bold' )
-    ax.set_xlabel('Individual Species', fontsize = 15)
-    ax.set_ylabel('Species count', fontsize = 15)
+    sp = sns.countplot(x = 'species', data=df, palette='husl' )
+    sp.set_title('Iris Species',fontsize = 16, fontweight='bold' )
+    sp.set_xlabel('Individual Species', fontsize = 15)
+    sp.set_ylabel('Species count', fontsize = 15)
     #plt.show()
     plt.savefig('Data Visualisation/species-plot.png',  bbox_inches='tight')
     return
@@ -90,7 +90,23 @@ def petal_sepal_width_relation():
     plt.savefig('Data Visualisation/petal_sepal_width.png',  bbox_inches='tight')
     return
 
-
+def sepal_petal_relationships():
+    # Below we're specifying an area for 2x1 plots
+    # i.e grid of x = 2 and y = 1
+    sns.set(style="darkgrid", palette="husl")
+    fig, axes = plt.subplots(1, 2, figsize=(16, 9))
+    fig.suptitle("Petal vs Sepal Length and Petal vs Sepal Width", fontsize = 16, fontweight='bold')
+    sns.scatterplot( data= df, x="sepal_length",
+                    y="petal_length", hue="species",
+                    ax=axes[0]
+                    ).set_title("Petal vs Sepal Length", fontweight='bold')
+    sns.scatterplot( data= df, x="sepal_width", 
+                    y="petal_width", hue="species", 
+                    ax=axes[1]).set_title("Petal vs Sepal Width", fontweight='bold')
+    #plt.show()
+    plt.savefig('Data Visualisation/sepal_petal_relationships.png')
+    plt.savefig('Data Visualisation/sepal_petal_relationships.svg')
+    return
 
 # Now Let's look at the attributes using a scatterplot within seaborn
 def pair_plots():
@@ -176,6 +192,16 @@ def species_histo():
     plt.savefig('Data Visualisation/species_histo.png', bbox_inches='tight')
     return
 
+def kde_species_histo():
+    sns.set(style="darkgrid", palette="husl")
+    fig, axes = plt.subplots(1, 2, figsize=(16, 9))
+    fig.suptitle(" Kernel Density Estimation overlaid on Histograms \nof all species by the petal length and petal width variables", fontsize = 16, fontweight='bold')
+    sns.histplot(df, x="petal_length", ax=axes[0], hue="species", bins=30, kde="True").set_xlabel("Petal length in cm", fontsize = 15)
+    sns.histplot(df, x="petal_width", ax=axes[1], hue="species", bins=30, kde="True").set_xlabel("Petal width in cm", fontsize = 15)
+    #plt.show()
+    plt.savefig('Data Visualisation/kde_species_histo.svg', bbox_inches='tight')
+    plt.savefig('Data Visualisation/kde_species_histo.png', bbox_inches='tight')
+    return
 
 
 # Function calls for testing
@@ -187,10 +213,12 @@ sepal_relation()
 species()
 petal_sepal_length_relation()
 petal_sepal_width_relation()
+sepal_petal_relationships()
 pair_plots()
 box_plots()
 box_violin_plots()
 histo_plots()
 kde()
 species_histo()
+kde_species_histo()
 #"""
