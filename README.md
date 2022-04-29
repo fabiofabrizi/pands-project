@@ -255,7 +255,7 @@ This is done to see how the frequency distribution affects the numbers, i.e. are
 
 The violin plots are overlaid on top of the box plots to have visual representation of the statistics.
 
-<img src="Data Visualisation/box_violin_plots.png" alt="Box plots of species">
+<img src="Data Visualisation/box_violin_plots.svg" alt="Box plots of species">
 
 From looking at the above plots it can be observed that:
 - *'Iris Setosa'* has some outliers when it comes to sepal width, potentially be skewing the results.
@@ -264,10 +264,6 @@ From looking at the above plots it can be observed that:
 <br>
 <br>
 <br>
-
-
-
-
 
 
 **Sepal and Petal Relationships: Sepal Width vs Length and Petal Width vs Length**
@@ -307,17 +303,20 @@ At this point, visual representation of statistics have been used to indicate to
 
 Examination of the four plots above indicate that *petal length* and *petal width* are the variables to focus on.  
 
-
+<br>
+<br>
 
 
 **Pair Plots**
 
 Pair plots are used to observe the relationship between two variables.
 
-<img src="Data Visualisation/pair_plots.png" alt="Pair plots">
+<img src="Data Visualisation/pair_plots.svg" alt="Pair plots">
 
-'pair_plots.png' is a scatter plot of all pairs of attributes.  
-If I could only present one plot to my audience, it would be this one, as it can be seen that petal length and width are highly correlated. In addition, it's clear that no matter what variable is examined, *'Iris Setosa'* is clearly apart from the other two species as it has the smallest petal lengths and widths. *'Iris Setosa'* also has the smallest sepal lengths but wider sepal widths than the other two species.
+The above plot is  a scatter plot of all pairs of attributes.  
+If I could only present one plot to my audience, it would be this one, as it can be seen that petal length and width are highly correlated.
+- *'Iris Setosa'* is clearly apart from the other two species as it has the smallest petal lengths and widths.  
+- *'Iris Setosa'* also has the smallest sepal lengths but wider sepal widths than the other two species.
 
 **Potential Limitations**
 Although the pair plots work well for a data set of this size (150), it's clear that they might not work so well for very large data set sizes for rows that number in the thousands or tens of thousands.
@@ -327,14 +326,16 @@ This is dependent on the amount of RAM on the users machine and two workarounds 
 
 **Petal Length and Width**
 
-Examining the *petal length* and *petal width* variables in more detail, *petal length* has a steeper frequency distribution, so if this variable was chosen instead of *petal width* to distinguish between the species there would be less margin for error.
+Examining the *petal length* and *petal width* variables in more detail, *petal length* has a steeper frequency distribution, indicating that if this variable was chosen instead of *petal width* to distinguish between the species there would be less margin for error.  
+However, as each species has only fifty samples and outliers have been observed from the violin plot, I'm going to consider both *petal length* and *petal width*.
 
-The *petal length*  and *petal width* variables can be examined in more detail by plotting *Kernel Density Estimation* - which is a way to estimate the probability function of a variable.
+The *petal length* and *petal width* variables can be examined in more detail by plotting *Kernel Density Estimation* - which is a way to estimate the probability function of a variable.
 
+<br>
+<br>
 
-
-
-Finally, examining the histogram of each individual species:
+**Kernel Density Estimation overlaid on histograms of each individual species**  
+<br>
 
 <img src="Data Visualisation/kde_species_histo.svg" alt="Histogram of each iris species"> 
 
