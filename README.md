@@ -123,7 +123,8 @@ iv) Apply some statistical analysis to get a visual representation of the data
 v) Examine the visual representation - Does it show a pattern or something unique that I can use to understand the data set  
 
 From the process above, one can take a data set and apply the above steps to look for any unique patterns in the data.
-
+<br>  
+<br>
 
 
 ## Files
@@ -165,7 +166,7 @@ This file does the task of ii) and iii) from **Methodology**.
 dataVis.py generates all the visualisations and saves them in the 'Data Visualisation' folder.
 The plots saved are '.png' file format.  
 Code comments are used to explain what each function does.
-This file performs iv) and v) from Preliminary Findings.
+This file performs iv) and v) from Preliminary Findings.  
 I'm examining: 
 - Sepal length and width of the species and looking for patterns,
 - Petal length and width and looking for patterns,
@@ -183,7 +184,7 @@ The file is commented with explanations about the functions.
 
 
 **analysis.txt**  
-This is the text file that's required to be generated - All that is contained in the file is text, and is a quick way to get an overview of the dataset. This file is generated from running *analysis.py*.
+This is the text file that's required to be generated - All that is contained in the file is text, and is a quick way to get an overview of the dataset. This file is generated from running *analysis.py* at the command line.
 
 ## Folders
 
@@ -213,6 +214,21 @@ From quickly glancing at the minimum and maximum values of the variables, it can
 smallest of the three species, whereas with *'Iris Virginica'* there seems to be a large variation in how large the plant (flower) can be.
 
 Further progressing from the above results, further investigations of the variables will indicate whether the layperson can identify any distinguishing features of the three species.
+<br>
+<br>
+
+**Histograms**
+
+A histogram is a type of plot that visualises the frequency distribution (also known as shape) of a set of data.
+A histogram is different to a bar chart because the bars are connected to each other, unlike a bar chart for categorical data. 
+It can be thought of as a picture of the data and in the histograms below:
+- The height of each bar represents the count of each iris (frequency) of that variable
+
+<img src="Data Visualisation/histograms.png" alt="Histograms of variables">  
+
+Sepal length and sepal width seem to have the only normal distributions whereas petal length and petal width seem 
+to have a distribution below the median (known as negatively skewed).  
+<br>
 
 **Box Plots**
 
@@ -249,17 +265,7 @@ From looking at the above plots it can be observed that:
 <br>
 <br>
 
-**Histograms**
 
-A histogram is a type of plot that visualises the frequency distribution (also known as shape) of a set of data.
-A histogram is different to a bar chart because the bars are connected to each other, unlike a bar chart for categorical data. 
-It can be thought of as a picture of the data and in the histograms below:
-- The height of each bar represents the count of each iris (frequency) of that variable
-
-<img src="Data Visualisation/histograms.png" alt="Histograms of variables">  
-
-Sepal length and sepal width seem to have the only normal distributions whereas petal length and petal width seem 
-to have a distribution below the median (known as negatively skewed).  
 
 
 
