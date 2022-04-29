@@ -11,7 +11,7 @@
 
 <!-- TABLE OF CONTENTS -->
 # Table of Contents
-1. **[About The Project]("#about-the-project")**
+1. **[About The Project](#about-the-project)**
 2. **[Aims](#aims)**
 3. **[Getting Started](#getting-Started)**
 4. **[Research](#research)**
