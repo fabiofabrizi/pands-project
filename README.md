@@ -18,11 +18,13 @@
 5. **[Methodology](#methodology)**
 6. **[Files](#files)**
 7. **[Results](#results)**
-8. **[Conclusions](#conclusions)**
+8. **[Conclusion](#conclusion)**
 9. **[References](#references)**
 
 
 
+<br>
+<br>
 
 ## About The Project
 
@@ -373,7 +375,7 @@ As a result of the analysis above a formula can be reached with regarding to cat
 [3] If 1.4 > 'petal width < 2.5 then the iris species is *'Iris Virginica'*
 
 
-## Conclusion ##  
+## Conclusion 
 
 
 *Petal length* and *petal width* are the best variables to distinguish between the three species as confirmed by   
