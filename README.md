@@ -353,9 +353,9 @@ Note that these errors would only occur for petal length measurements between 4.
 
 As a result of the analysis above a formula can be reached with regarding to categorising the three species based on *petal length*:
 
-[1] If 1 > 'petal length' < 1.9, then the iris species is *'Iris Setosa'*  
-[2] If 3 > 'petal length' < 4.8, then the iris species is *'Iris Versicolor'*   
-[3] If 4.8 > 'petal length' < 6.9, then the iris species is *'Iris Virginica'*
+[1] If 1 < 'petal length' < 1.9, then the iris species is *'Iris Setosa'*  
+[2] If 3 < 'petal length' < 4.8, then the iris species is *'Iris Versicolor'*   
+[3] If 4.8 < 'petal length' < 6.9, then the iris species is *'Iris Virginica'*
 <br>
 <br>
 
@@ -370,9 +370,10 @@ Note that these errors would only occur for *petal width* measurements between 1
 Also note that in real life, measurement error would have to be taken into consideration because the botanist/researcher/etc would be measuring the petal width in millimetres (mm).
 
 As a result of the analysis above a formula can be reached with regarding to categorising the three species based on *petal width*:  
-[1] If 0.1 > 'petal width' < 0.6 then the iris species is *'Iris Setosa'*   
-[2] If 1 > 'petal width < 1.8 then the iris species is *'Iris Versicolor'*  
-[3] If 1.4 > 'petal width < 2.5 then the iris species is *'Iris Virginica'*  
+
+[1] If 0.1 < 'petal width' < 0.6 then the iris species is *'Iris Setosa'*   
+[2] If 1 < 'petal width < 1.8 then the iris species is *'Iris Versicolor'*  
+[3] If 1.4 < 'petal width < 2.5 then the iris species is *'Iris Virginica'*  
 
 
 ## Conclusion 
